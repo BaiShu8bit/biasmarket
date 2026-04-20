@@ -1,0 +1,213 @@
+{
+  "success": true,
+  "albums": [
+    {
+      "id": "cmmuy6r6n006zjo045zh901if",
+      "title": "Who Is She",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2026-04-06T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/hoontaeric/uploads/1000765405_mmuy6ndx_9ob3pj.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-03-17T18:30:28.895Z",
+      "creator": {
+        "id": "cml4wmdh5000rjm04kh1by0cq",
+        "username": "hoontaeric",
+        "name": "ele 🇮🇹",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cml4wmdh5000rjm04kh1by0cq/cml4wmdh5000rjm04kh1by0cq_1774611272020_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 169,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmju2nbei0037js04yyqotxjm",
+      "title": "Tokyo Mission Start",
+      "korean_title": null,
+      "album_type": "Japanese",
+      "release_date": "2025-11-05T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/yummiwon/img_8358_mju2napb_wmqs7m.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-12-31T13:48:26.874Z",
+      "creator": {
+        "id": "cmjehzz440004lg04uj5se7zf",
+        "username": "yummiwon",
+        "name": "yum",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmjehzz440004lg04uj5se7zf/cmjehzz440004lg04uj5se7zf_1767189732622_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 37,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmhjk68m20001lb044dn7lpmc",
+      "title": "224",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2025-06-09T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/41210/4121026.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:54:10.586Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 424,
+      "albumVersionCount": 5
+    },
+    {
+      "id": "cmhjk31ut006ijx04ekaa11p2",
+      "title": "KISS ROAD",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-05-07T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/41188/4118890.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:51:41.861Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmhjjvii80007lg04jn1sze4k",
+      "title": "Lose Yourself",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2024-10-15T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/41080/4108098.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:45:50.192Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 248,
+      "albumVersionCount": 5
+    },
+    {
+      "id": "cmhjjsnvh000ll404rcw3sabm",
+      "title": "Sticky",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2024-07-01T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/41032/4103276.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:43:37.182Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 6,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmhgfzouq0003jo041gi6609d",
+      "title": "Midas Touch",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2024-04-03T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/40997/4099765.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-01T15:33:48.050Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 378,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmhjjpjng001hjv0454bc0s8f",
+      "title": "Born to be XX",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2023-11-08T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/40928/4092859.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:41:11.741Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 317,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmhjjkvul0001l404antt9koz",
+      "title": "KISS OF LIFE",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2023-07-05T00:00:00.000Z",
+      "image_url": "https://image.bugsm.co.kr/album/images/original/40878/4087845.jpg?version=undefined",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-03T19:37:34.269Z",
+      "creator": {
+        "id": "cmh7qg8jr002zl404qqjzjou5",
+        "username": "meowsic",
+        "name": "marie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7qg8jr002zl404qqjzjou5/cmh7qg8jr002zl404qqjzjou5_1773421777539_96.webp"
+      },
+      "group": {
+        "id": "cmhaqwl1u000xjr049t6gv4bk",
+        "name": "KISS OF LIFE"
+      },
+      "photocardCount": 94,
+      "albumVersionCount": 1
+    }
+  ],
+  "timestamp": "2026-04-20T15:39:32.183Z"
+}
