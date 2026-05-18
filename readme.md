@@ -1,6 +1,6 @@
 <div align="center">
 
-![Biasmarket Logo and website](./contenido/iconos/rm-logo.png)
+![Biasmarket Logo and website](./contenido/iconos/RM-logo.png)
 
 </div>
 ---
