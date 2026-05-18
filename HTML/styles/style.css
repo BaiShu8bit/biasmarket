@@ -1,0 +1,432 @@
+:root {
+    --navbar-height: 75px;
+    --search-height: 80px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+
+    /* 🔥 IMPORTANTE: evita superposición con fixed header + buscador */
+    padding-top: calc(var(--navbar-height) + var(--search-height));
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* =========================================================
+   3. LOGO
+========================================================= */
+
+#logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+#tittle {
+    /* Elige una de estas opciones: */
+   /* font-family: 'Unbounded', sans-serif;  */   /* Moderno y robusto */
+    font-family: 'Righteous', cursive;   /* Retro-futurista */
+
+    font-size: 2.5rem;
+    white-space: nowrap;
+    text-align: center;
+
+    color: white; /* color del texto */
+    -webkit-text-stroke: 2px black; /* grosor y color del borde */
+}
+
+.breadcrumb {
+    margin-top: -30px;
+
+}
+
+/* =========================================================
+   4. INPUTS / BOTONES
+========================================================= */
+
+input,
+button {
+    border-radius: 5px;
+}
+
+.btn-light {
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+/* =========================================================
+   6. LOGIN / FORMULARIOS
+========================================================= */
+
+#iniciar_sesion {
+
+    color: black;
+
+    background-color: white;
+}
+
+#registrarse {
+
+    color: white;
+
+    background-color: black;
+}
+
+#botones {
+    display: none;
+}
+
+#botones > div {
+    margin-left: 50px;
+}
+
+#form_iniciar_sesion {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+#form_iniciar_sesion form {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+#usuario,
+#password {
+
+    min-width: 150px;
+}
+
+/* =========================
+   VALIDATION
+========================= */
+
+label.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* =========================
+   LOGIN MESSAGE
+========================= */
+
+#mensaje_inicio {
+    color: red;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    width: 750px;
+}
+
+/* =========================
+   BUSCADOR (FIXED HEADER 2)
+========================= */
+
+#cont_buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    background-color: black !important;
+
+    padding: 15px;
+
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+
+    z-index: 1040;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input */
+#cont_buscador .form-outline {
+    width: 65%;
+    display: flex;
+}
+
+/* Button */
+#boton_buscador {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* =========================
+   SUGGESTIONS
+========================= */
+
+#suggestions {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    max-height: 300px;
+
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    overflow-y: auto;
+    z-index: 9999;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hide scrollbar */
+#suggestions::-webkit-scrollbar {
+    display: none;
+}
+
+#suggestions {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* =========================
+   LOGIN FORM
+========================= */
+
+#form_iniciar_sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#form_iniciar_sesion form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+}
+
+#usuario,
+#password,
+#iniciar_sesion,
+#registrarse {
+    min-width: 150px;
+}
+
+  #Carousel-slider {
+
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin-top: -80px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #0b5d87;
+  }
+
+/* =========================================================
+   7. NAV ELEMENTS
+========================================================= */
+
+.dropdown-menu {
+
+    position: absolute;
+
+    width: 100%;
+}
+
+.navbar-nav {
+
+    gap: 10px;
+}
+
+#dropdownPerfil,
+#dropdownVender,
+#dropdownComprar {
+
+    width: 150px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa !important;
+    color: black !important;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+footer a {
+    color: black !important;
+}
+
+footer ul.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+#socialmedia .icon {
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#socialmedia .icon:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+#socialmedia > .col-12 {
+    margin-left: 85%;
+    width: 14%;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =========================
+   SHARETHIS
+========================= */
+
+.sharethis-inline-share-buttons {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1199.98px) {
+
+    :root {
+        --navbar-height: 75px;
+        --search-height: 70px;
+    }
+
+    #tittle {
+        display: none;
+    }
+
+    #logo img {
+        width: 55px;
+    }
+
+    .navbar-collapse {
+        padding: 15px;
+        margin-top: 75px;
+        z-index: 1045;
+    }
+
+    #cont_buscador .form-outline {
+        width: 85%;
+    }
+
+    #boton_buscador {
+        font-size: 0;
+        padding: 0 12px;
+        margin-left: 5px;
+    }
+
+    #boton_buscador i {
+        font-size: 22px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+    :root {
+        --navbar-height: 65px;
+        --search-height: 60px;
+    }
+
+    #logo img {
+        width: 45px;
+    }
+
+    .navbar-toggler {
+        padding: 4px 8px;
+    }
+
+    #cont_buscador {
+        padding: 10px;
+    }
+
+    #cont_buscador .form-outline {
+        width: 80%;
+    }
+
+    footer ul.nav {
+        flex-direction: column;
+    }
+
+    #socialmedia > .col-12 {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #suggestions {
+        width: 100%;
+        left: 0;
+    }
+}

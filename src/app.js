@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
 
 const groupsRoutes = require("./routes/groups.routes");
 const membersRoutes = require("./routes/members.routes");

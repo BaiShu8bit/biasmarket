@@ -1,0 +1,563 @@
+/* =========================================================
+  1. DESIGN TOKENS (VARIABLES BASE)
+========================================================= */
+  :root {
+    /* Colores */
+    --color-primary: #000000;
+    --color-secondary: #666666;
+    --color-border: #ccc;
+    --color-bg: #ffffff;
+
+    /* Espaciado */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+
+    /* Bordes */
+    --radius-md: 10px;
+
+    /* Sombras */
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* Tipografía */
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 24px;
+
+  }
+
+/* =========================================================
+  2. BASE GLOBAL
+========================================================= */
+
+  body {
+    background: var(--color-bg);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  h1 {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+
+/* =========================================================
+   3. LAYOUT
+========================================================= */
+
+/* GRID PHOTOCARDS */
+
+#imagenes {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: var(--space-xl);
+
+  margin-top: var(--space-lg);
+
+}
+
+
+
+/* SECCIÓN ALBUMS + GROUPS */
+
+.secciones-flex {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: var(--space-xl);
+
+  margin-top: var(--space-lg);
+
+}
+
+
+
+.bloque {
+
+  width: 50%;
+
+  background: var(--color-bg);
+
+  padding: var(--space-md);
+
+  border-radius: var(--radius-md);
+
+}
+
+
+/* =========================================================
+
+   5. CARD SYSTEM BASE
+
+========================================================= */
+
+
+
+.card-base {
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  padding: var(--space-md);
+
+  background: var(--color-bg);
+
+
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+
+
+  gap: var(--space-sm);
+
+
+
+  transition: box-shadow 0.3s ease;
+
+}
+
+
+
+.card-base:hover {
+
+  box-shadow: var(--shadow-md);
+
+}
+
+
+
+/* =========================================================
+
+   6. VARIANTES DE CARD
+
+========================================================= */
+
+
+
+.card-small {
+
+  width: 240px;
+
+  height: 280px;
+
+}
+
+
+
+.card-large {
+
+  width: 320px;
+
+  height: 440px;
+
+}
+
+
+
+/* =========================================================
+
+   7. IMÁGENES (FIX CENTRADO VERTICAL REAL)
+
+========================================================= */
+
+
+
+.card-base img {
+
+  width: 100%;
+
+  object-fit: contain;
+
+  border-radius: var(--radius-md);
+
+
+
+  display: block;
+
+  margin: auto;
+
+
+
+  transition: transform 0.3s ease;
+
+}
+
+
+
+/* tamaños por tipo */
+
+.card-small img {
+
+  max-height: 200px;
+
+}
+
+
+
+.card-large img {
+
+  max-height: 300px;
+
+}
+
+
+
+/* hover imagen */
+
+.card-base img:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* =========================================================
+
+   8. TEXTO CARD
+
+========================================================= */
+
+
+
+.card-base h3 {
+
+  font-size: var(--font-lg);
+
+  margin: 0;
+
+}
+
+
+
+.card-base p {
+
+  font-size: var(--font-sm);
+
+  color: var(--color-secondary);
+
+  margin: 0;
+
+}
+
+
+
+/* =========================================================
+
+   12. DIVIDERS
+
+========================================================= */
+
+
+
+.nombre_grupo {
+
+  font-size: var(--font-lg);
+
+  margin: 10px auto;
+
+  text-align: left;
+
+  margin-left: 170px;
+
+}
+
+
+
+.divider {
+
+  margin: 10px auto;
+
+  width: 100%;
+
+  border: 0;
+
+  border-top: 2px solid black;
+
+}
+
+
+
+/* =========================================================
+
+   PAGINACIÓN
+
+========================================================= */
+
+
+
+.pagination {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+}
+
+
+
+.pagination button {
+
+  padding: 8px 14px;
+
+  border: 1px solid #ccc;
+
+  background: white;
+
+  cursor: pointer;
+
+  border-radius: 6px;
+
+  transition: 0.2s;
+
+}
+
+
+
+.pagination button:hover {
+
+  background: #f0f0f0;
+
+}
+
+
+
+/* =========================================================
+
+   BREADCRUMB
+
+========================================================= */
+
+
+
+.breadcrumb {
+
+    background: none;
+
+    padding: 10px 0;
+
+    margin-bottom: 10px;
+
+    margin-top: 100px;
+
+    margin-left: 1%;
+
+}
+
+
+
+.breadcrumb-item a {
+
+    color: #06b4f3;
+
+    text-decoration: none;
+
+}
+
+
+
+.breadcrumb-item.active {
+
+    color: #fff;
+
+    font-weight: bold;
+
+}
+
+/* =========================================================
+   BADGES
+========================================================= */
+.badge-estado {
+    display: inline-block;
+    padding: 3.75px 6px;
+    font-size: 11.25px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5.625px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ESTADOS */
+.badge-estado.mint {
+    background: rgba(23, 162, 184, 0.9);
+}
+
+.badge-estado.near-mint {
+    background: rgba(60, 175, 86, 0.9);
+}
+
+.badge-estado.excellent {
+    background: rgba(130, 137, 30, 0.9);
+}
+
+.badge-estado.good {
+    background: rgba(255, 193, 7, 0.95);
+    color: #000;
+}
+
+.badge-estado.poor {
+     background: rgba(220, 53, 69, 0.9);
+}
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+@media (max-width: 1199.98px) {
+
+  #imagenes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card-base.card-large {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE SMARTPHONE
+========================================================= */
+@media (max-width: 575.98px) {
+
+  #imagenes {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: 0 12px; /* 👈 margen lateral que te faltaba */
+  }
+
+  .card-base.card-large {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================================
+   index.php
+========================================================= */
+#ficha_carta {
+    width: 100%;
+    max-width: 1100px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+}
+
+#imagen_ficha_carta,
+#imagen_ficha_carta2,
+#imagen_ficha_carta3 {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#imagen_ficha_carta {
+    border-radius: 20px;
+}
+
+#imagen_informacion {
+    width: 100%;
+    min-height: 360px;
+}
+
+.col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-responsive {
+    width: 50%;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.unavailable {
+    text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+
+    #ficha_carta {
+        max-width: 95%;
+        margin-top: 140px;
+    }
+
+    #imagen_ficha_carta,
+#imagen_ficha_carta2,
+#imagen_ficha_carta3 {
+    max-width: 80%;
+    max-height: 350px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+    .table-responsive {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+#imagen_informacion {
+    height: auto;
+}
+
+#nombre_carta {
+    word-break: break-word;
+}
+
+#ficha_carta .row {
+    flex-direction: column;
+}
+
+#ficha_carta .col-md-4,
+#ficha_carta .col-md-8 {
+    width: 100%;
+    max-width: 100%;
+}
+
+    .table-responsive {
+        width: 50%;
+    }
+}

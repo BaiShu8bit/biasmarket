@@ -1,39 +1,128 @@
-const albumsData = require("../data/albums.json");
+const fs = require("fs");
+const path = require("path");
 
-// obtener todos los albums
+// ======================================
+// LEER TODOS LOS JSON albums*
+// ======================================
+
+function cargarAlbums() {
+
+    const dataFolder =
+        path.join(__dirname, "../data");
+
+    const files =
+        fs.readdirSync(dataFolder);
+
+    // solo albums*.json
+    const albumFiles = files.filter(file =>
+
+        file.startsWith("albums") &&
+        file.endsWith(".json")
+    );
+
+    let allAlbums = [];
+
+    albumFiles.forEach(file => {
+
+        const filePath =
+            path.join(dataFolder, file);
+
+        const jsonData = JSON.parse(
+
+            fs.readFileSync(filePath, "utf8")
+        );
+
+        // estructura:
+        // { success: true, albums: [] }
+
+        if (jsonData.albums) {
+
+            allAlbums =
+                allAlbums.concat(jsonData.albums);
+        }
+    });
+
+    return allAlbums;
+}
+
+// ======================================
+// TODAS + FILTRO OPCIONAL POR GROUP_ID
+// ======================================
+
 const getAllAlbums = (req, res) => {
-    res.json(albumsData.albums);
+
+    const albums = cargarAlbums();
+
+    // 🔥 query string
+    const groupId = req.query.groupId;
+
+    // si viene groupId:
+    // /api/albums?groupId=xxxxx
+
+    if (groupId) {
+
+const filtrados = albums.filter(
+
+    album =>
+
+        album.group &&
+        album.group.id === groupId
+);
+
+        return res.json(filtrados);
+    }
+
+    // si no viene groupId -> todos
+    res.json(albums);
 };
 
-// obtener album por ID
-const getAlbumById = (req, res) => {
-    const id = req.params.id;
+// ======================================
+// POR ID
+// ======================================
 
-    const album = albumsData.albums.find(a => a.id === id);
+const getAlbumById = (req, res) => {
+
+    const albums = cargarAlbums();
+
+    const album = albums.find(
+
+        a => a.id === req.params.id
+    );
 
     if (!album) {
-        return res.status(404).json({ error: "Album no encontrado" });
+
+        return res.status(404).json({
+
+            error: "Álbum no encontrado"
+        });
     }
 
     res.json(album);
 };
 
-// obtener albums por grupo
+// ======================================
+// POR GRUPO
+// ======================================
+
 const getAlbumsByGroup = (req, res) => {
-    const groupId = req.params.groupId;
 
-    const albums = albumsData.albums.filter(
-        a => a.group.id === groupId
-    );
+    const albums = cargarAlbums();
 
-    if (albums.length === 0) {
-        return res.status(404).json({ error: "No hay albums para este grupo" });
-    }
+const result = albums.filter(
 
-    res.json(albums);
+    a =>
+
+        a.group &&
+        a.group.id === req.params.groupId
+);
+
+    res.json(result);
 };
 
+// ======================================
+
 module.exports = {
+
     getAllAlbums,
     getAlbumById,
     getAlbumsByGroup

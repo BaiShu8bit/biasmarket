@@ -1,0 +1,422 @@
+{
+  "success": true,
+  "albums": [
+    {
+      "id": "cmo9imnrl000dl604oods5gfn",
+      "title": "Motto",
+      "korean_title": "모토",
+      "album_type": "mini",
+      "release_date": "2026-05-18T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/lianbleh/uploads/1000046619_mo9imlxg_1glk2m.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-04-22T03:51:12.081Z",
+      "creator": {
+        "id": "cmlmldyxu002bk304kt3h5rrs",
+        "username": "lianbleh",
+        "name": "⋅˚₊‧ 𐙚  .  𝐋𝐢𝐚𝐧 . ⋆˚꩜｡🐈‍⬛",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmlmldyxu002bk304kt3h5rrs/cmlmldyxu002bk304kt3h5rrs_1776960984705_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 3,
+      "albumVersionCount": 15
+    },
+    {
+      "id": "cmm8liwlc0065jo045w0m1h0d",
+      "title": "Ice Cream",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2026-03-23T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/itzypobs/uploads/hcx-jc4bcaat3lz_mm8lv04b_ea6tkw.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-03-02T03:05:04.897Z",
+      "creator": {
+        "id": "cmjst5ro9000zl7049c6y6s96",
+        "username": "itzypobs",
+        "name": "𐙚 itzypobs ⋆˚࿔",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmjst5ro9000zl7049c6y6s96/cmjst5ro9000zl7049c6y6s96_1776430716464_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 230,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmi7dp6wl001mjo04kz9u0vgl",
+      "title": "TUNNEL VISION",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2025-11-10T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/Moraine%20workspace/0x1900-000000-80-0-0_7_mi7dp60z_51k8iy.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-20T11:59:25.750Z",
+      "creator": {
+        "id": "cmg27hu5g0000su76w3wj5maq",
+        "username": "moraine",
+        "name": "moraine",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKFHDWyfxNvTHIqlPx6SHvqd2XkqFOChB7GNdGz4hORYrSpTL0=s96-c"
+      },
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 646,
+      "albumVersionCount": 14
+    },
+    {
+      "id": "cmg3w45s400037fmhcv4ke2qy",
+      "title": "Collector",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2025-10-08T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music221/v4/35/ee/b0/35eeb06c-0075-d275-195a-c1e94c49133a/5021732996718.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-28T16:04:27.845Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 129,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg29dj76000d12xj2khsygdu",
+      "title": "Girls Will Be Girls",
+      "korean_title": "Girls Will Be Girls",
+      "album_type": "mini",
+      "release_date": "2025-06-09T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/gwbg_mgvl80z6_35zpvb.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:44.999Z",
+      "created_at": "2025-09-27T12:40:07.795Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 708,
+      "albumVersionCount": 14
+    },
+    {
+      "id": "cmg3vr3em00017fmhvgt6bjuq",
+      "title": "Air",
+      "korean_title": null,
+      "album_type": null,
+      "release_date": "2025-03-10T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/air_solo_mgvl89tt_5bqay5.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:51.386Z",
+      "created_at": "2025-09-28T15:54:18.219Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 248,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg29b9u20002kq1srb6qyloa",
+      "title": "GOLD",
+      "korean_title": "GOLD",
+      "album_type": "mini",
+      "release_date": "2024-10-15T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/gold_mgvl8nfj_fnk2lu.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:55.488Z",
+      "created_at": "2025-09-27T12:38:22.346Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 585,
+      "albumVersionCount": 13
+    },
+    {
+      "id": "cmg3vkfb30003fhzqbannzbqq",
+      "title": "Algorhythm",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2024-05-15T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/algorhythm_mgvl8wj1_mqj3hx.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:02.007Z",
+      "created_at": "2025-09-28T15:49:07.071Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 159,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmg29alyp0003sqp5x05hezhs",
+      "title": "BORN TO BE",
+      "korean_title": "BORN TO BE",
+      "album_type": "mini",
+      "release_date": "2024-01-08T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/btb_mgvl96ng_qjn72k.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:08.421Z",
+      "created_at": "2025-09-27T12:37:51.406Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 438,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg3vjmtv0001fhzqpbpzkpsl",
+      "title": "Ringo",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2023-10-18T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/ringo_mgvlacm8_gkfkwk.png",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:11.502Z",
+      "created_at": "2025-09-28T15:48:30.164Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 145,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg2992dw0003105mken3vamn",
+      "title": "KILL MY DOUBT",
+      "korean_title": "KILL MY DOUBT",
+      "album_type": "mini",
+      "release_date": "2023-07-31T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/kmd_mgvlbflt_amd6ot.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:40:32.721Z",
+      "created_at": "2025-09-27T12:36:39.380Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 897,
+      "albumVersionCount": 20
+    },
+    {
+      "id": "cmg294t530007qycd1awe347i",
+      "title": "Cheshire",
+      "korean_title": "Cheshire",
+      "album_type": "mini",
+      "release_date": "2022-11-30T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/cheshire_mgvlaw1d_bhcro9.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:25.060Z",
+      "created_at": "2025-09-27T12:33:20.772Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 430,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmg3ukpax000111o076ys99c6",
+      "title": "Blah Blah Blah",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2022-10-05T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/blah_blah_blah_mgvlb5yy_c8sanb.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:28.457Z",
+      "created_at": "2025-09-28T15:21:20.405Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 39,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmeqzhl9i00156kh6o6g3xbj2",
+      "title": "CHECKMATE",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2022-07-15T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/checkmate_mgvlbsmo_5irhmn.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:30.032Z",
+      "created_at": "2025-08-25T10:38:10.662Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 340,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmg3u9dah0003ibpt41huhtnk",
+      "title": "Voltage",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2022-04-06T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/voltage_mgvlc20i_jgpp7k.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:35.563Z",
+      "created_at": "2025-09-28T15:12:31.626Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 32,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmg3u8r6y0039c0irpa3hcew3",
+      "title": "IT’z ITZY",
+      "korean_title": "IT’z ITZY",
+      "album_type": "Special Edition",
+      "release_date": "2021-12-22T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/itz_itzy_mgvlcdx2_jlf5ll.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:38.579Z",
+      "created_at": "2025-09-28T15:12:02.987Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 51,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmeqzhl6i00136kh68uqm4vkv",
+      "title": "Crazy in Love",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2021-09-24T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/cil_mgvlcquj_txdtps.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:40.310Z",
+      "created_at": "2025-08-25T10:38:10.554Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 355,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg28zqqu000712xj3p03mp3j",
+      "title": "GUESS WHO",
+      "korean_title": "GUESS WHO",
+      "album_type": "mini",
+      "release_date": "2021-04-30T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/guess_who_mgvld0sr_zzl2l4.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:45.472Z",
+      "created_at": "2025-09-27T12:29:24.390Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 193,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmg28w8br0001k6tqzxw26udm",
+      "title": "NOT SHY",
+      "korean_title": "NOT SHY",
+      "album_type": "mini",
+      "release_date": "2020-08-17T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/not_shy_mgvlda6d_u5nlq9.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:50.869Z",
+      "created_at": "2025-09-27T12:26:40.548Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 88,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg28u0a20003vj5agkseqs8t",
+      "title": "IT’z ME",
+      "korean_title": "IT’z ME",
+      "album_type": "mini",
+      "release_date": "2020-03-09T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/itzypobs/uploads/it_27z_me_online_cover_mmehmdrr_iw3dit.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:56.428Z",
+      "created_at": "2025-09-27T12:24:56.810Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 77,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg28qx18000b4i1mz5adg68v",
+      "title": "IT’z ICY",
+      "korean_title": "IT’z ICY",
+      "album_type": "mini",
+      "release_date": "2019-07-29T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/img_6872_mgvlduj2_lsq056.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:59.503Z",
+      "created_at": "2025-09-27T12:22:32.637Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 63,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmi7dnjc3000ji804ow9km87o",
+      "title": "IT’z DIFFERENT",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2019-02-12T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/Moraine%20workspace/1900x1900-000000-80-0-0_11_mi7dnitk_mz79j1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-11-20T11:58:08.547Z",
+      "creator": {
+        "id": "cmg27hu5g0000su76w3wj5maq",
+        "username": "moraine",
+        "name": "moraine",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKFHDWyfxNvTHIqlPx6SHvqd2XkqFOChB7GNdGz4hORYrSpTL0=s96-c"
+      },
+      "group": {
+        "id": "cmeqz8tkb005d136wwr54jpjy",
+        "name": "ITZY"
+      },
+      "photocardCount": 15,
+      "albumVersionCount": 1
+    }
+  ],
+  "timestamp": "2026-05-14T00:45:50.825Z"
+}

@@ -1,0 +1,481 @@
+#titulo-opciones {
+    margin-top: 115px;
+    margin-left: 20px;
+}
+
+.perfil-container {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    min-height: 68vh;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.perfil-sidebar {
+    width: 25%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.perfil-sidebar h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.perfil-sidebar button {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.perfil-sidebar button:hover {
+    background: #f4f4f9;
+}
+
+.perfil-sidebar button.active {
+    background: #0056b3;
+    color: #fff;
+}
+
+.perfil-detalles {
+    width: 75%;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.perfil-detalles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info-cuenta,
+.info-cuenta-direccion,
+.info-cuenta-saldo {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.info-cuenta-saldo {
+    border-bottom: none;
+}
+
+.info-cuenta p,
+.info-cuenta-direccion p,
+.info-cuenta-saldo p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+strong {
+    color: #000;
+}
+
+.btn-editar,
+.btn-agregar {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seccion-cuenta {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+}
+
+.seccion-cuenta,
+.seccion-direcciones {
+    display: none;
+}
+
+.seccion-cuenta.seccion-activa,
+.seccion-direcciones.seccion-activa {
+    display: block !important;
+}
+
+.seccion-direcciones {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-direcciones h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.direcciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.direccion {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.direccion p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+    word-break: break-word;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editar,
+.btn-camion {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-editar i,
+.btn-camion i {
+    font-size: 18px;
+}
+
+#boton_agregar2,
+#boton_agregar1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#boton_agregar2 i,
+#boton_agregar1 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    text-align: left;
+}
+
+.modal-content input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.modal-content button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.sidebar-btn:hover {
+    background-color: #0056b3;
+}
+
+.sidebar-btn.active {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 15vh !important;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+    #titulo-opciones {
+        margin-top: 140px;
+        margin-left: 15px;
+        font-size: 28px;
+    }
+
+    .perfil-container {
+        flex-direction: column;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .perfil-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .perfil-detalles {
+        width: 100%;
+        border-left: none;
+    }
+
+    .perfil-sidebar button {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .direcciones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    footer {
+        margin-top: 8vh !important;
+    }
+}
+
+/* =========================================================
+   SMARTPHONE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    #titulo-opciones {
+        margin-top: 170px;
+        margin-left: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .perfil-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .perfil-sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .perfil-sidebar h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .perfil-sidebar button {
+        font-size: 14px;
+        padding: 12px 8px;
+        margin-bottom: 10px;
+    }
+
+    .perfil-detalles {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .perfil-detalles h2,
+    h2 {
+        font-size: 20px;
+    }
+
+    .info-cuenta p,
+    .info-cuenta-direccion p,
+    .info-cuenta-saldo p,
+    .direccion p {
+        font-size: 14px;
+    }
+
+    .seccion-cuenta,
+    .seccion-direcciones {
+        padding: 10px;
+    }
+
+    .direcciones-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .direccion {
+        padding: 10px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-group button {
+        width: 100%;
+    }
+
+    #boton_agregar1,
+    #boton_agregar2 {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 18px;
+    }
+
+    .modal-content input[type="text"] {
+        font-size: 13px;
+    }
+
+    .modal-content button[type="submit"] {
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 5vh !important;
+    }
+}

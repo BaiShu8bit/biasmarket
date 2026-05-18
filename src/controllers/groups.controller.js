@@ -34,3 +34,39 @@ module.exports = {
     getGroupById,
     searchGroups
 };
+
+// Search
+
+exports.getGroups = (req, res) => {
+    const search = req.query.search || "";
+    const page = parseInt(req.query.page) || 1;
+    const limit = 10;
+    const offset = (page - 1) * limit;
+
+    const sql = `
+        SELECT * FROM grupos
+        WHERE nombre LIKE ?
+        LIMIT ? OFFSET ?
+    `;
+
+    const params = [`%${search}%`, limit, offset];
+
+    db.query(sql, params, (err, results) => {
+        if (err) return res.status(500).json(err);
+
+        db.query(
+            "SELECT COUNT(*) AS total FROM grupos WHERE nombre LIKE ?",
+            [`%${search}%`],
+            (err2, countResult) => {
+
+                const total = countResult[0].total;
+
+                res.json({
+                    grupos: results,
+                    page,
+                    totalPages: Math.ceil(total / limit)
+                });
+            }
+        );
+    });
+};

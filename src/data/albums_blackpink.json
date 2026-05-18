@@ -1,0 +1,771 @@
+{
+  "success": true,
+  "albums": [
+    {
+      "id": "cmkgkapaj002zl904mkjrwh4o",
+      "title": "Deadline",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2026-02-27T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/sterrycherry/uploads/8779f72089f184127c1f44f29940a683_mmdz8hhf_jkzc98.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-01-16T07:33:27.307Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 321,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmhck2nqc0007l40492t90pij",
+      "title": "Eyes Closed (Jisoo collab with Zayn)",
+      "korean_title": "Eyes Closed",
+      "album_type": "single",
+      "release_date": "2025-10-10T00:00:00.000Z",
+      "image_url": "https://blackpink.cafe/wp-content/uploads/2025/10/blackpink-album-jisoo-zayn-eyes-closed.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-29T22:17:00.324Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 2,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmgt79zm10005la04kjhgboiz",
+      "title": "JUMP",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-07-11T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/71jelm2k_tl_ac_ul480_mgt79z94_984oez.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T09:11:09.962Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 9,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmlo4a22v000tjj04pjflt7g4",
+      "title": "On My Mind (feat. Rosé)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-06-27T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/meganskiendiel321/uploads/img_3797_mlo4a0gr_4m0b4k.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-02-15T19:06:55.111Z",
+      "creator": {
+        "id": "cml71j52p0010lb046lu6hp13",
+        "username": "meganskiendiel321",
+        "name": "oliver 🍒",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cml71j52p0010lb046lu6hp13/cml71j52p0010lb046lu6hp13_1778113312232_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cml9een6j000gju042n3g116o",
+      "title": "Priceless (feat. LISA)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-05-02T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/sterrycherry/blackpink-250428-lisa-maroon-5-priceless_ml9eemp8_9ml5i0.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-02-05T11:53:52.604Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmh8d27ta002il804mb0kpzde",
+      "title": "Ruby (Jennie solo)",
+      "korean_title": "",
+      "album_type": "full",
+      "release_date": "2025-03-07T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/sterrycherry/oip_mh8d279b_0dvmqn.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-26T23:49:37.678Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 110,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmh8e7t2o000dla04kkkl7uaf",
+      "title": "Alter Ego (Lisa solo)",
+      "korean_title": "",
+      "album_type": "full",
+      "release_date": "2025-02-28T00:00:00.000Z",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Lisa_-_Alter_Ego.png/250px-Lisa_-_Alter_Ego.png",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-27T00:21:58.128Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 85,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmh812erf0005kv045k4titly",
+      "title": "AMORTAGE (Jisoo solo)",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2025-02-14T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/81e_yaewmvl_ac_ul480_mh812edr_aa4xud.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-26T18:13:51.292Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 138,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmh9bke9l001hl804tj56pysb",
+      "title": "rosie (Rosé solo)",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2024-12-06T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/91xxhrut8yl_mh9bkdj7_074ib9.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-27T15:55:32.794Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 76,
+      "albumVersionCount": 11
+    },
+    {
+      "id": "cmhck607l0007la04b6ljpzet",
+      "title": "APT. (Rose collab with Bruno Mars)",
+      "korean_title": "APT.",
+      "album_type": "single",
+      "release_date": "2024-10-18T00:00:00.000Z",
+      "image_url": "https://blackpink.cafe/wp-content/uploads/2024/10/blackpink-album-rose-apt-bruno-mars.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-29T22:19:36.465Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 5
+    },
+    {
+      "id": "cmh8dcsrh000hk004s75w1yb1",
+      "title": "Mantra (Jennie solo)",
+      "korean_title": "",
+      "album_type": "single",
+      "release_date": "2024-10-11T00:00:00.000Z",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/Jennie_-_Mantra.png",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-26T23:57:51.389Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 5,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmh8fgfwj009xl7048awqxwwk",
+      "title": "Rockstar (Lisa solo)",
+      "korean_title": "",
+      "album_type": "single",
+      "release_date": "2024-06-27T00:00:00.000Z",
+      "image_url": "https://tse2.mm.bing.net/th/id/OIP.ivYovPfdr2ct-0ItsXMFdwHaHa?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-27T00:56:40.580Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 7,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmmuykeq6006llb048i03p0g3",
+      "title": "You &amp; Me (Jennie Solo)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2023-10-06T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/sterrycherry/uploads/ab67616d0000b2738cd1023ed6ec97598937d55c_mmuykc5e_9b8eia.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-03-17T18:41:05.934Z",
+      "creator": {
+        "id": "cmh7jotja003hju04o2l1zkqg",
+        "username": "sterrycherry",
+        "name": "Sterry Cherry",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmh7jotja003hju04o2l1zkqg/cmh7jotja003hju04o2l1zkqg_1776778878039_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 3,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmgt6nipg000jle04l367taut",
+      "title": "THE GIRLS (BLACKPINK THE GAME OST)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2023-08-25T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b273a2ef2c1c668b6fdb1f346dd1_mgt6niam_56we6z.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:53:41.620Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 73,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmf52f8ay0003v2hr6j0cl6pj",
+      "title": "ME (Jisoo solo)",
+      "korean_title": "",
+      "album_type": "mini",
+      "release_date": "2023-03-31T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b273f35b8a6c03cc633f734bd8ac_mh7j8m5x_0vk83h.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T07:09:05.867Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 129,
+      "albumVersionCount": 7
+    },
+    {
+      "id": "cmeqzhet100036kh64iqsfseq",
+      "title": "BORN PINK",
+      "korean_title": "본 핑크",
+      "album_type": "full",
+      "release_date": "2022-09-16T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music112/v4/a1/ad/94/a1ad94e7-4ef7-69ad-5c12-8318ba6fb6ca/BLACKPINK_BORN_PINK.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-08-25T10:38:02.293Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 338,
+      "albumVersionCount": 12
+    },
+    {
+      "id": "cmgt6m4wq0001l804dupeyrke",
+      "title": "Pink Venom",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2022-08-19T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/500x0w_mgt6m4j6_8ise50.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:52:37.082Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 8,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmf4xylig0001frv7jqhiz8aj",
+      "title": "LALISA (Lisa solo)",
+      "korean_title": "",
+      "album_type": "single",
+      "release_date": "2021-09-10T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d000082c131166c5472883d1a83a6689e_mhaf2uvr_693xy6.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T05:04:11.362Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 56,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmgt6jres000hle04dq4rm7x1",
+      "title": "The Album (JP Ver.)",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2021-07-27T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/7177buokwos_ac_ul480_mgt6jqzq_m56ryh.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:50:46.277Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 48,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmgt77a9r0005jo045fcw5ali",
+      "title": "BLACKPINK 2021 'THE SHOW' LIVE CD",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2021-06-01T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b273d5e4203a5e8167435a0b7561_mgt77xv3_dfr72t.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T09:09:03.807Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 16,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmf55ikz10001hdv91j50ikqf",
+      "title": "-R- (Rosé solo)",
+      "korean_title": "",
+      "album_type": "single",
+      "release_date": "2021-03-12T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/715977flzil_mh96161u_3okmfs.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T08:35:41.102Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 67,
+      "albumVersionCount": 5
+    },
+    {
+      "id": "cmeqzhepw00016kh6toc419kv",
+      "title": "THE ALBUM",
+      "korean_title": "더 앨범",
+      "album_type": "full",
+      "release_date": "2020-10-02T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music115/v4/a4/b0/87/a4b08794-2b73-4a46-b346-4cfdcff685b3/BLACKPINK_Crown_0728.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-08-25T10:38:02.180Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 78,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmgt6fbk60007jp04rl5wqmg4",
+      "title": "Ice Cream (with Selena Gomez)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2020-08-28T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/81hser1r0nl_ac_ul480_mgt6fb74_bf3pe8.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:47:19.111Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmf4t5sg000015s0vr3vaqru6",
+      "title": "How You Like That (Special Edition)",
+      "korean_title": "How You Like That",
+      "album_type": "single",
+      "release_date": "2020-07-17T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/81cpu-147ml_mh3b1y2d_aap2jx.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T02:49:48.864Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 51,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmgt67v6d0007l404lou22s0t",
+      "title": "KILL THIS LOVE (JP Ver.)",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2019-10-16T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/71mqzaajuvl_ac_ul480_mgt67ut8_coafdo.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:41:31.286Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 13,
+      "albumVersionCount": 7
+    },
+    {
+      "id": "cmf5zwzmo000114i4bqvfuqdf",
+      "title": "KILL THIS LOVE",
+      "korean_title": "Kill This Love",
+      "album_type": "EP",
+      "release_date": "2019-04-05T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music125/v4/01/81/c0/0181c0eb-ae18-a303-a4d0-15ddcc3e92e4/eCover.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T22:46:41.760Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 55,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmgt6qfmr0001ik0422ze40jw",
+      "title": "BLACKPINK IN YOUR AREA (Japanese Version)",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2018-12-05T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b2735e07cea6a3c231c7d45785cb_mgt6qf1p_o7xfsi.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T08:55:57.603Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 4,
+      "albumVersionCount": 13
+    },
+    {
+      "id": "cmh8flj8m000hl504vtggift7",
+      "title": "SOLO (Jennie solo)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2018-11-12T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/71q5del0cgl_ac_ul480_mh8fliua_mevdsu.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-27T01:00:38.183Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 20,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmgt3k8uc0001ib04o7t9mnrv",
+      "title": "DDU-DU DDU-DU",
+      "korean_title": "뚜두뚜두",
+      "album_type": "single",
+      "release_date": "2018-08-22T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b2731f75d0c821747a61af75441c_mgt3k88r_bi8t3q.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T07:27:10.020Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 16,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmf5zyyr40001claxlykub89c",
+      "title": "SQUARE UP",
+      "korean_title": "Square Up",
+      "album_type": "EP",
+      "release_date": "2018-06-15T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b273bfd46639322b597331d9ecef_mgt3fva7_le02m2.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-09-04T22:48:13.937Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 42,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmhb8eiqz0006jo04e403dwd7",
+      "title": "Re: BLACKPINK",
+      "korean_title": null,
+      "album_type": "repackage",
+      "release_date": "2018-03-28T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d000082c148732d61e2dc22da1fd3cf5a_mhb8ei32_26pzwg.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-29T00:02:32.171Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 10,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmgt351cu000jjx04ix1zme22",
+      "title": "BLACKPINK (Japanese Version)",
+      "korean_title": null,
+      "album_type": "EP",
+      "release_date": "2017-08-29T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/ab67616d0000b27355ef3902e9215876105bb1e2_mgt350r5_khp15l.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T07:15:20.478Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 8,
+      "albumVersionCount": 5
+    },
+    {
+      "id": "cmgt2y5q9000ijr04ja11h1yu",
+      "title": "AS IF IT'S YOUR LAST",
+      "korean_title": "마지막처럼",
+      "album_type": "single",
+      "release_date": "2017-06-22T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/91jx1dyatrl_ac_ul480_mgt2y53t_5uaox2.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T07:09:59.553Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmgt326pr0003l704q0d7nmlf",
+      "title": "SQUARE TWO",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2016-11-01T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/500x0w_1_mgt326b4_75ptc4.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T07:13:07.456Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmgt2txuz0003ic04kfywn2sh",
+      "title": "SQUARE ONE",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2016-08-08T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/vibekookie/500x0w_mgt2txav_mvcsir.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T07:06:42.732Z",
+      "creator": {
+        "id": "cmgp4nymj0008jr04utryfij5",
+        "username": "vibekookie",
+        "name": "VibeKookie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgp4nymj0008jr04utryfij5/cmgp4nymj0008jr04utryfij5_cmgp4nymj0008jr04utryfij5_1760648443575_1763095951364_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8m6a0004136w21hm3ty4",
+        "name": "BLACKPINK"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 1
+    }
+  ],
+  "timestamp": "2026-05-13T20:42:06.439Z"
+}

@@ -1,0 +1,302 @@
+/* =========================================================
+  1. DESIGN TOKENS (VARIABLES BASE)
+========================================================= */
+  :root {
+    /* Colores */
+    --color-primary: #000000;
+    --color-secondary: #666666;
+    --color-border: #ccc;
+    --color-bg: #ffffff;
+
+    /* Espaciado */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+
+    /* Bordes */
+    --radius-md: 10px;
+
+    /* Sombras */
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* Tipografía */
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 24px;
+  }
+  /* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+/* =========================
+   TITULO GRUPO
+========================= */
+
+#nombre_grupo {
+
+  font-size: var(--font-xl);
+
+  text-align: left;
+
+  margin-top: 40px;
+}
+
+/* =========================
+   GRID DE ALBUMS (DESKTOP)
+========================= */
+
+#albums_container {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 30px;
+
+  justify-items: center;
+
+  align-items: start;
+}
+
+/* =========================
+   CARD ALBUM
+========================= */
+
+.card-base.card-small {
+
+  width: 200px;
+
+  height: 280px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  border: 1px solid #ddd;
+
+  padding: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  transition: all 0.2s ease;
+}
+
+.card-base.card-small:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   IMAGEN ALBUM
+========================= */
+
+.card-base.card-small img {
+
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+/* =========================
+   TITULO ALBUM
+========================= */
+
+.card-base.card-small h3 {
+
+  font-size: 14px;
+
+  text-align: center;
+
+  margin-top: 10px;
+
+  color: #222;
+}
+
+/* =========================
+   MENSAJE VACÍO
+========================= */
+
+#albums_container p {
+
+  font-size: 16px;
+
+  color: #666;
+
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+
+  margin: 10px auto;
+
+  width: 100%;
+
+  border: 0;
+
+  border-top: 2px solid black;
+}
+
+/* =========================
+   PAGINACIÓN
+========================= */
+
+.pagination {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.pagination button {
+
+  padding: 8px 14px;
+
+  border: 1px solid #ccc;
+
+  background: white;
+
+  cursor: pointer;
+
+  border-radius: 6px;
+
+  transition: 0.2s;
+}
+
+.pagination button:hover {
+
+  background: #f0f0f0;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.breadcrumb {
+
+  background: none;
+
+  padding: 10px 0;
+
+  margin-bottom: 10px;
+
+  margin-top: 100px;
+
+  margin-left: 1%;
+}
+
+.breadcrumb-item a {
+
+  color: #06b4f3;
+
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+
+  color: #333;
+
+  font-weight: bold;
+}
+
+/* =========================================================
+   TABLET (≤1199px) → 3 COLUMNAS
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+  #albums_container {
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+  }
+
+  .card-base.card-small {
+
+    width: 100%;
+
+    max-width: 240px;
+
+    height: 260px;
+  }
+
+  .card-base.card-small img {
+
+    height: 150px;
+  }
+}
+
+/* =========================================================
+   SMARTPHONE (≤575px) → 1 COLUMNA
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+  #albums_container {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 0 16px;
+  }
+
+  .card-base.card-small {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    margin: 0 auto;
+
+    height: 260px;
+  }
+
+  .card-base.card-small img {
+
+    height: 150px;
+  }
+
+  .container {
+
+    margin-top: 100px;
+  }
+}

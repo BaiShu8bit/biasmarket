@@ -12,9 +12,6 @@ const {
 // todas las photocards
 router.get("/", getAllPhotocards);
 
-// photocard por ID
-router.get("/:id", getPhotocardById);
-
 // por grupo
 router.get("/group/:groupId", getPhotocardsByGroup);
 
@@ -23,5 +20,8 @@ router.get("/member/:memberId", getPhotocardsByMember);
 
 // por álbum
 router.get("/album/:albumId", getPhotocardsByAlbum);
+
+// photocard por ID (SIEMPRE AL FINAL)
+router.get("/:id", getPhotocardById);
 
 module.exports = router;

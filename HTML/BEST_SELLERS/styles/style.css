@@ -1,0 +1,223 @@
+/* =========================================================
+   1. DESIGN TOKENS (VARIABLES BASE)
+========================================================= */
+
+:root {
+
+  --color-primary: #000000;
+  --color-secondary: #666666;
+  --color-border: #ccc;
+  --color-bg: #ffffff;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  --radius-md: 10px;
+
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+}
+
+/* =========================================================
+   2. BASE GLOBAL
+========================================================= */
+
+body {
+  background: var(--color-bg);
+}
+
+.container {
+  position: relative;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* =========================================================
+   3. GRID PHOTOCARDS (DESKTOP)
+========================================================= */
+
+#imagenes {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: var(--space-xl);
+
+  margin-top: var(--space-lg);
+}
+
+/* =========================================================
+   4. CARDS
+========================================================= */
+
+.card-base {
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  padding: var(--space-md);
+
+  background: var(--color-bg);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  gap: var(--space-sm);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.card-base:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* VARIANTS */
+
+.card-small {
+  width: 240px;
+  height: 280px;
+}
+
+.card-large {
+  width: 320px;
+  height: 440px;
+}
+
+.card-small,
+.card-large {
+  max-width: 100%;
+}
+
+/* IMAGES */
+
+.card-base img {
+
+  width: 100%;
+
+  object-fit: contain;
+
+  border-radius: var(--radius-md);
+
+  display: block;
+
+  margin: auto;
+
+  transition: transform 0.3s ease;
+}
+
+.card-small img {
+  max-height: 200px;
+}
+
+.card-large img {
+  max-height: 300px;
+}
+
+.card-base img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+
+.card-base h3 {
+  font-size: var(--font-lg);
+  margin: 0;
+}
+
+.card-base p {
+  font-size: var(--font-sm);
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+/* =========================================================
+   5. DIVIDERS
+========================================================= */
+
+.divider,
+.divider2 {
+
+  border: 0;
+
+  border-top: 2px solid black;
+
+  margin: 10px 0;
+}
+
+.divider2 {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* =========================================================
+   6. TABLET
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+  #imagenes {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    padding: 0 16px;
+  }
+
+  .card-base {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   7. SMARTPHONE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+  #imagenes {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 0 16px;
+  }
+
+  .card-base {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    margin: 0 auto;
+  }
+
+  .container {
+    margin-top: 140px;
+  }
+}

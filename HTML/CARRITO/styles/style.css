@@ -1,0 +1,242 @@
+#carrito_titulo {
+    margin-top: 2%;
+}
+
+#no_cartas_carrito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#volver_mercado {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#volver_mercado:hover {
+    background-color: darkblue;
+}
+
+.img-photocard {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.carrito-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    margin-right: 20px;
+}
+
+.card-container {
+    width: 350px;
+    text-align: center;
+}
+
+/* ============== */
+/* TRANSLATE CONDITION */
+/* ============== */
+.badge-estado {
+    display: inline-block;
+    padding: 3.75px 6px;
+    font-size: 11.25px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5.625px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ESTADOS */
+.badge-estado.mint {
+    background: rgba(23, 162, 184, 0.9);
+}
+
+.badge-estado.near-mint {
+    background: rgba(60, 175, 86, 0.9);
+}
+
+.badge-estado.excellent {
+    background: rgba(130, 137, 30, 0.9);
+}
+
+.badge-estado.good {
+    background: rgba(255, 193, 7, 0.95);
+    color: #000;
+}
+
+.badge-estado.poor {
+     background: rgba(220, 53, 69, 0.9);
+}
+
+#overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+#tarjeta {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    width: 400px;
+
+    max-width: 90%;
+}
+
+/*
+
+
+.credit-card {
+    background: linear-gradient(45deg, #0099f7, #f11712);
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chip {
+    width: 40px;
+    height: 30px;
+    background: gold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.card-holder,
+.card-expiry {
+    text-align: left;
+    font-size: 14px;
+}
+
+.payment-form {
+    margin-top: 20px;
+}
+
+.payment-form label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0099f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+    background-color: #007bb5;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+}
+*/
+
+@media (max-width: 1599.98px) {
+    #si_cartas_carrito {
+        margin-top: 25px !important;
+    }
+}
+
+@media (max-width: 1052.98px) {
+    #si_cartas_carrito {
+        margin-top: 60px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #si_cartas_carrito {
+        margin-top: 130px !important;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 372px) {}

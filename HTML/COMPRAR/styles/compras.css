@@ -1,0 +1,217 @@
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    margin-top: 20vh;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070cc;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #005fa3;
+}
+
+.filter-buttons button.active {
+    background-color: #005fa3;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #f4f6f8;
+    font-weight: 700;
+    color: #555;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #0070cc;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+}
+
+.a_tabla {
+    color: blue;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.a_tabla:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+    .container {
+        max-width: 95%;
+        margin-top: 18vh;
+        padding: 0 0.8rem;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    .filter-buttons button {
+        width: auto;
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================================
+   SMARTPHONE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .container {
+        max-width: 100%;
+        margin-top: 16vh;
+        padding: 0 0.5rem;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    table {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    tr {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        padding: 10px 0;
+        font-size: 0.85rem;
+        text-align: right;
+        word-break: break-word;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+    }
+
+    .btn-pdf {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        background-color: #0070cc;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+}

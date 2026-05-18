@@ -1,0 +1,341 @@
+{
+  "success": true,
+  "albums": [
+    {
+      "id": "cmnx4c717001kl704v58wb95g",
+      "title": "PUREFLOW pt.1",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2026-05-22T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/meganskiendiel321/uploads/f159272a-ba30-4f13-b388-40b9fef1e175_mnxjct6t_rwwdmp.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-04-13T11:37:55.099Z",
+      "creator": {
+        "id": "cml71j52p0010lb046lu6hp13",
+        "username": "meganskiendiel321",
+        "name": "oliver 🍒",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cml71j52p0010lb046lu6hp13/cml71j52p0010lb046lu6hp13_1778113312232_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 0,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmoa4bnx1005yl504olzqky5k",
+      "title": "CELEBRATION",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2026-04-24T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/kittykkura/uploads/img_2568_moclhj91_v7dcyp.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-04-22T13:58:30.613Z",
+      "creator": {
+        "id": "cmjbmj64u000jle0458qadz7q",
+        "username": "kittykkura",
+        "name": "evie ☆",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmjbmj64u000jle0458qadz7q/cmjbmj64u000jle0458qadz7q_1766073734237_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 16,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmguta24h000kjs04crecwiym",
+      "title": "SPAGHETTI",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-10-24T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/kittykkura/img_8191_mjwzrgq0_n00ti4.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:14:50.945Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 626,
+      "albumVersionCount": 24
+    },
+    {
+      "id": "cmgv6fyfq000xky04cu2a814p",
+      "title": "EASY-CRAZY-HOT",
+      "korean_title": null,
+      "album_type": "compilation",
+      "release_date": "2025-09-05T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/kittykkura/uploads/img_2570_mocr9gf1_d9cw7s.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T18:23:21.111Z",
+      "creator": {
+        "id": "cmgt3bves0003jo04nhv2q8jx",
+        "username": "junie",
+        "name": "junie",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgt3bves0003jo04nhv2q8jx/cmgt3bves0003jo04nhv2q8jx_cmgt3bves0003jo04nhv2q8jx_1760601260422_1763096200017_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 23,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmgutoj9y001olc04ejyxg3jx",
+      "title": "DIFFERENT",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2025-06-24T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0774_mgutoitn_ju909s.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:26:06.359Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 219,
+      "albumVersionCount": 10
+    },
+    {
+      "id": "cmgut8ado0003i904q2oq9haj",
+      "title": "HOT",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2025-03-14T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0768_mgut89us_dqyot2.png",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:13:28.333Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 677,
+      "albumVersionCount": 18
+    },
+    {
+      "id": "cmgutlzxu001mlc04lgalu764",
+      "title": "CRAZY (Japanese Ver.)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2024-12-11T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0773_mgutlzhp_dts2c1.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:24:07.987Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 207,
+      "albumVersionCount": 10
+    },
+    {
+      "id": "cmgut6rbb0001kz04eo4jgmxp",
+      "title": "CRAZY",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2024-08-30T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0767_mgut6qo5_crt1qd.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:12:16.968Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 603,
+      "albumVersionCount": 12
+    },
+    {
+      "id": "cmgut59o20001l404bvbsdlvq",
+      "title": "EASY",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2024-02-19T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0766_mgut58x9_v50pv8.png",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:11:07.442Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 543,
+      "albumVersionCount": 11
+    },
+    {
+      "id": "cmgut3d7e0001i904c4v2atzd",
+      "title": "Perfect Night",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2023-10-27T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0765_mgut3cai_fel9ad.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:09:38.714Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 15,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmguthqui0001l704ag3fsyx9",
+      "title": "UNFORGIVEN (Japanese Ver)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2023-08-23T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0771_mguthq8a_prbjcy.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:20:49.578Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 134,
+      "albumVersionCount": 10
+    },
+    {
+      "id": "cmeqzhi2w000r6kh6028n81p6",
+      "title": "UNFORGIVEN",
+      "korean_title": null,
+      "album_type": "full",
+      "release_date": "2023-05-01T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/kittykkura/img_8190_mjwxi0ys_mrdrvm.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-08-25T10:38:06.536Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 396,
+      "albumVersionCount": 10
+    },
+    {
+      "id": "cmgutfa1h0033jx04k0yksa1g",
+      "title": "FEARLESS (Japanese Ver.)",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2023-01-25T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/heartshakerz/img_0770_mgutf9gg_d2msrk.jpeg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-17T12:18:54.485Z",
+      "creator": {
+        "id": "cmgnxswa70006l804imnq0jd8",
+        "username": "heartshakerz",
+        "name": "k ✷ˎ-ˊ",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmgnxswa70006l804imnq0jd8/cmgnxswa70006l804imnq0jd8_cmgnxswa70006l804imnq0jd8_1760482016031_1763095943525_96.webp"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 130,
+      "albumVersionCount": 10
+    },
+    {
+      "id": "cmeqzhhzu000p6kh651yn1ovv",
+      "title": "ANTIFRAGILE",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2022-10-17T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/kittykkura/img_8189_mjwxi880_c51epz.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-08-25T10:38:06.427Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 427,
+      "albumVersionCount": 9
+    },
+    {
+      "id": "cmgst9yhu0019le040ci81c7m",
+      "title": "FEARLESS",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2022-05-02T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/ravencupid900/screenshot_2025-10-15_223900_mgst9y38_3q7fg8.png",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-16T02:39:13.890Z",
+      "creator": {
+        "id": "cmgpx82f1000njo04ftkwtb2a",
+        "username": "ravencupid900",
+        "name": "Raven Cupid",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocLtVGSclJ_Bo7jsDp5uIksWixB6u_I4SHzww1BBhRN3V_SjGvg=s96-c"
+      },
+      "group": {
+        "id": "cmeqz8pd4002e136wxlrxz44a",
+        "name": "LE SSERAFIM"
+      },
+      "photocardCount": 211,
+      "albumVersionCount": 3
+    }
+  ],
+  "timestamp": "2026-05-13T20:53:19.357Z"
+}

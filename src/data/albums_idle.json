@@ -1,0 +1,466 @@
+{
+  "success": true,
+  "albums": [
+    {
+      "id": "cmklcbh90000ql404630xce8z",
+      "title": "MONO",
+      "korean_title": null,
+      "album_type": "single",
+      "release_date": "2026-01-27T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/sujidahlia/img_8247_mkmq7l19_3w9mx7.webp",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2026-01-19T15:48:57.492Z",
+      "creator": {
+        "id": "cmihvcovx0001jx045rk9fm3b",
+        "username": "sujidahlia",
+        "name": "sujidahlia",
+        "avatar_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/profile_images/users/cmihvcovx0001jx045rk9fm3b/cmihvcovx0001jx045rk9fm3b_1773354259573_96.webp"
+      },
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 21,
+      "albumVersionCount": 0
+    },
+    {
+      "id": "cmh4iwif60001jv04zza9k0a3",
+      "title": "MY, Lover",
+      "korean_title": null,
+      "album_type": "mini",
+      "release_date": "2025-11-03T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/Moraine%20workspace/20251024_101255_mh4iwhf7_pbmodx.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": null,
+      "created_at": "2025-10-24T07:22:04.482Z",
+      "creator": {
+        "id": "cmg27hu5g0000su76w3wj5maq",
+        "username": "moraine",
+        "name": "moraine",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocKFHDWyfxNvTHIqlPx6SHvqd2XkqFOChB7GNdGz4hORYrSpTL0=s96-c"
+      },
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 272,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg294vr00009qycdma5jt9ya",
+      "title": "i-dle",
+      "korean_title": "i-dle",
+      "album_type": "mini",
+      "release_date": "2025-10-03T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music211/v4/63/5e/58/635e5811-a857-f31a-3c08-783b010874c8/5021732985552.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:36.898Z",
+      "created_at": "2025-09-27T12:33:24.153Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 67,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg29b1y00005sqp5tqfsoeo7",
+      "title": "Motivation",
+      "korean_title": "Motivation",
+      "album_type": "single",
+      "release_date": "2025-09-16T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/motivation_album_cover_mguqiawq_1x5e9a.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:38.886Z",
+      "created_at": "2025-09-27T12:38:12.117Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 138,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmg293xnz0005k6tqp876wb9c",
+      "title": "We are",
+      "korean_title": "We are",
+      "album_type": "mini",
+      "release_date": "2025-05-19T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music221/v4/b9/6a/75/b96a7569-738d-8d3e-745e-46d2a638e2ce/cover_KM0022635_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:45.975Z",
+      "created_at": "2025-09-27T12:32:39.984Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 626,
+      "albumVersionCount": 6
+    },
+    {
+      "id": "cmg293be40003juthmtoq06bm",
+      "title": "We are i-dle",
+      "korean_title": "We are i-dle",
+      "album_type": "compilation",
+      "release_date": "2025-05-02T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/photo_2025-10-17_19-01-33_mguqp2v2_41db11.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:49.283Z",
+      "created_at": "2025-09-27T12:32:11.113Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 5,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmg299fub0001sqp5i5jzatr9",
+      "title": "HER",
+      "korean_title": "HER",
+      "album_type": "mini",
+      "release_date": "2025-01-21T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/her_album_cover_mguqiit6_lcsvje.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:53.717Z",
+      "created_at": "2025-09-27T12:36:56.815Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 329,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg28bzdx000112xjq731rqqu",
+      "title": "I Sway",
+      "korean_title": "I Sway",
+      "album_type": "mini",
+      "release_date": "2024-07-08T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/photo_2025-10-17_19-02-14_mguqovja_ypi2pm.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:31:57.593Z",
+      "created_at": "2025-09-27T12:10:55.845Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 982,
+      "albumVersionCount": 13
+    },
+    {
+      "id": "cmg29a71r0005105m366guwr9",
+      "title": "YUQ1",
+      "korean_title": "YUQ1",
+      "album_type": "mini",
+      "release_date": "2024-04-23T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/photo_2025-10-17_19-01-36_mguqodzk_te8zrq.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:03.597Z",
+      "created_at": "2025-09-27T12:37:32.080Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 212,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg292eqs0005qycd6f029r56",
+      "title": "2",
+      "korean_title": "2",
+      "album_type": "full",
+      "release_date": "2024-01-29T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music126/v4/96/da/6d/96da6de4-8824-f449-7a7a-243aaa9f3a75/cover_KM0019415_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:07.544Z",
+      "created_at": "2025-09-27T12:31:28.804Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 1101,
+      "albumVersionCount": 13
+    },
+    {
+      "id": "cmg29212g000b12xj5a2bta8e",
+      "title": "HEAT",
+      "korean_title": "HEAT",
+      "album_type": "mini",
+      "release_date": "2023-10-06T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music211/v4/64/a0/4f/64a04f8f-2e5c-c0c2-e930-8e6434f2411f/93624850601.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:32:12.893Z",
+      "created_at": "2025-09-27T12:31:11.078Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 38,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg291g9e0001juth1st6xhbc",
+      "title": "I Feel",
+      "korean_title": "I Feel",
+      "album_type": "mini",
+      "release_date": "2023-05-15T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music116/v4/29/27/57/29275797-c35d-df22-1394-61189a2aae43/cover_KM0017301_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:17.484Z",
+      "created_at": "2025-09-27T12:30:44.111Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 714,
+      "albumVersionCount": 12
+    },
+    {
+      "id": "cmg290r0s000912xjbxya1dci",
+      "title": "I Love",
+      "korean_title": "I Love",
+      "album_type": "mini",
+      "release_date": "2022-10-17T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music112/v4/03/66/9c/03669cc2-6893-8fd6-b55c-4540a9561f15/cover_KM0016163_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:27.534Z",
+      "created_at": "2025-09-27T12:30:11.404Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 386,
+      "albumVersionCount": 8
+    },
+    {
+      "id": "cmg298lug0001105mqgzvnbb4",
+      "title": "MY",
+      "korean_title": "MY",
+      "album_type": "mini",
+      "release_date": "2022-04-27T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music126/v4/3c/e0/6a/3ce06afc-1f73-130b-9c90-26e4768551df/cover_KM0015104_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:33.588Z",
+      "created_at": "2025-09-27T12:36:17.941Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 99,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmeqzhu9n002b6kh6gl6ct9ua",
+      "title": "I Never Die",
+      "korean_title": "I Never Die",
+      "album_type": "full",
+      "release_date": "2022-03-14T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music116/v4/ce/04/82/ce0482db-b035-5eed-ee2e-23999b4b2051/cover_KM0014878_1.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:36.720Z",
+      "created_at": "2025-08-25T10:38:22.332Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 186,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg285yuf0003l7yqwkazh6tk",
+      "title": "Windy",
+      "korean_title": "Windy",
+      "album_type": "mini",
+      "release_date": "2021-07-05T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/photo_2025-10-17_19-01-35_mguqpcib_2ve655.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:42.232Z",
+      "created_at": "2025-09-27T12:06:15.207Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 40,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmg28y79b0001z5jkov8we68z",
+      "title": "I Burn",
+      "korean_title": "I Burn",
+      "album_type": "mini",
+      "release_date": "2021-01-11T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music115/v4/a7/01/ac/a701ac66-0af2-a557-6d8d-c783fd8699be/8804775155901.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:47.195Z",
+      "created_at": "2025-09-27T12:28:12.480Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 190,
+      "albumVersionCount": 4
+    },
+    {
+      "id": "cmg28xp8n000512xjx9gwe1gf",
+      "title": "Oh My God",
+      "korean_title": "Oh My God",
+      "album_type": "mini",
+      "release_date": "2020-08-26T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music115/v4/7d/49/55/7d495546-9ce3-f3f8-0985-a19176e5dd04/FIX_G_I-DLE_tsujyo.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:49.748Z",
+      "created_at": "2025-09-27T12:27:49.127Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 7,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg28wv5p0003k6tqpzw2zh7h",
+      "title": "DUMDi DUMDi",
+      "korean_title": "DUMDi DUMDi",
+      "album_type": "single",
+      "release_date": "2020-08-03T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music115/v4/1b/4b/92/1b4b9248-7f7b-d2ef-73d9-c2bef6572587/cover_-.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:52.332Z",
+      "created_at": "2025-09-27T12:27:10.138Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 61,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmg28vb9b0005vj5ayvtz6qak",
+      "title": "I Trust",
+      "korean_title": "I Trust",
+      "album_type": "mini",
+      "release_date": "2020-04-06T00:00:00.000Z",
+      "image_url": "https://hywfhpjrxseqlrzqyghg.supabase.co/storage/v1/object/public/no_watermarked/J%20workspace/photo_2025-10-17_19-01-31_mguqpt1u_1hko0b.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:33:55.122Z",
+      "created_at": "2025-09-27T12:25:57.692Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 51,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmg28u49u0001ms5yo9tf3tgf",
+      "title": "LATATA",
+      "korean_title": "LATATA",
+      "album_type": "mini",
+      "release_date": "2019-07-11T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music125/v4/7f/32/6a/7f326af1-779d-b29d-922c-a568b172baef/cover.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:34:00.950Z",
+      "created_at": "2025-09-27T12:25:01.956Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 14,
+      "albumVersionCount": 3
+    },
+    {
+      "id": "cmg28rszs0001vj5axqoyazxv",
+      "title": "Uh-Oh",
+      "korean_title": "Uh-Oh",
+      "album_type": "single",
+      "release_date": "2019-06-26T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music115/v4/e0/00/d3/e000d3ff-34d7-df4a-e422-35b36fedd7fa/8804775131608.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:34:04.264Z",
+      "created_at": "2025-09-27T12:23:14.023Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 36,
+      "albumVersionCount": 2
+    },
+    {
+      "id": "cmg28qodt00094i1msw9tbvdc",
+      "title": "I Made",
+      "korean_title": "I Made",
+      "album_type": "mini",
+      "release_date": "2019-02-26T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music124/v4/ca/ff/39/caff3985-2be7-47fe-7104-7918c2906569/cover-.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:34:06.714Z",
+      "created_at": "2025-09-27T12:22:21.425Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 60,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmg28p4iw0003qycdqeyi87py",
+      "title": "HANN (Alone)",
+      "korean_title": "한(一)",
+      "album_type": "single",
+      "release_date": "2018-08-14T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music124/v4/ef/02/33/ef0233f1-2a15-5af4-1634-2ab68fc64dd9/cover-_DS.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:34:10.650Z",
+      "created_at": "2025-09-27T12:21:09.002Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 18,
+      "albumVersionCount": 1
+    },
+    {
+      "id": "cmg28m94f00064i1moxvm95aw",
+      "title": "I Am",
+      "korean_title": "I Am",
+      "album_type": "mini",
+      "release_date": "2018-05-02T00:00:00.000Z",
+      "image_url": "https://a1.mzstatic.com/r40/Music124/v4/78/32/0e/78320ee9-3f98-aa6f-8efc-9bf598eabd5b/cover-.jpg",
+      "watermarked_image_url": null,
+      "watermarked_at": "2025-10-11T16:34:13.352Z",
+      "created_at": "2025-09-27T12:18:55.020Z",
+      "creator": null,
+      "group": {
+        "id": "cmeqz948i00d4136wyoglur5d",
+        "name": "i-dle"
+      },
+      "photocardCount": 41,
+      "albumVersionCount": 1
+    }
+  ],
+  "timestamp": "2026-05-13T13:04:55.959Z"
+}

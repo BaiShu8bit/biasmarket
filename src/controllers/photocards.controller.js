@@ -1,50 +1,137 @@
-const photocardsData = require("../data/photocards.json");
+const fs = require("fs");
+const path = require("path");
 
-// obtener todas las photocards
+/*
+========================================
+CARGAR TODOS LOS JSON DE PHOTOCARDS
+========================================
+*/
+
+function obtenerTodasLasPhotocards() {
+
+    const dataFolder = path.join(__dirname, "../data");
+
+    const files = fs.readdirSync(dataFolder);
+
+    // SOLO archivos que empiecen por "photocards"
+    const photocardFiles = files.filter(file =>
+        file.startsWith("photocards") &&
+        file.endsWith(".json")
+    );
+
+    let allPhotocards = [];
+
+    photocardFiles.forEach(file => {
+
+        const filePath = path.join(dataFolder, file);
+
+        const jsonData = JSON.parse(
+            fs.readFileSync(filePath, "utf8")
+        );
+
+        // Tu estructura:
+        // { success: true, photocards: [] }
+
+        if (jsonData.photocards) {
+
+            allPhotocards =
+                allPhotocards.concat(jsonData.photocards);
+        }
+    });
+
+    return allPhotocards;
+}
+
+/*
+========================================
+OBTENER TODAS LAS PHOTOCARDS
+========================================
+*/
+
 const getAllPhotocards = (req, res) => {
-    res.json(photocardsData.photocards);
+
+    const photocards = obtenerTodasLasPhotocards();
+
+    res.json(photocards);
 };
 
-// obtener photocard por ID
+/*
+========================================
+OBTENER PHOTOCARD POR ID
+========================================
+*/
+
 const getPhotocardById = (req, res) => {
+
     const id = req.params.id;
 
-    const photocard = photocardsData.photocards.find(p => p.id === id);
+    const photocards = obtenerTodasLasPhotocards();
+
+    const photocard = photocards.find(
+        p => p.id === id
+    );
 
     if (!photocard) {
-        return res.status(404).json({ error: "Photocard no encontrada" });
+
+        return res.status(404).json({
+            error: "Photocard no encontrada"
+        });
     }
 
     res.json(photocard);
 };
 
-// filtrar por grupo
+/*
+========================================
+FILTRAR POR GRUPO
+========================================
+*/
+
 const getPhotocardsByGroup = (req, res) => {
+
     const groupId = req.params.groupId;
 
-    const result = photocardsData.photocards.filter(
+    const photocards = obtenerTodasLasPhotocards();
+
+    const result = photocards.filter(
         p => p.group_id === groupId
     );
 
     res.json(result);
 };
 
-// filtrar por miembro
+/*
+========================================
+FILTRAR POR MIEMBRO
+========================================
+*/
+
 const getPhotocardsByMember = (req, res) => {
+
     const memberId = req.params.memberId;
 
-    const result = photocardsData.photocards.filter(
+    const photocards = obtenerTodasLasPhotocards();
+
+    const result = photocards.filter(
         p => p.member_id === memberId
     );
 
     res.json(result);
 };
 
-// filtrar por álbum
+/*
+========================================
+FILTRAR POR ÁLBUM
+========================================
+*/
+
 const getPhotocardsByAlbum = (req, res) => {
+
     const albumId = req.params.albumId;
 
-    const result = photocardsData.photocards.filter(
+    const photocards = obtenerTodasLasPhotocards();
+
+    const result = photocards.filter(
         p => p.album_id === albumId
     );
 

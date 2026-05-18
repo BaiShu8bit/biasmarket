@@ -1,0 +1,10 @@
+form {
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
+#mensaje_nombre, #mensaje_apellido1, #mensaje_apellido2, #mensaje_email, #mensaje_password, #mensaje_password_repeat, #mensaje_pais, #mensaje_usuario{
+
+    color: red;
+}
