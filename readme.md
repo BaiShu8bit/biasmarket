@@ -3,7 +3,7 @@
 ![Biasmarket Logo and website](./contenido/iconos/RM-logo.png)
 
 </div>
----
+
 ## Información
 
 Este repositorio contine información sobre biasmarket website:
@@ -13,20 +13,20 @@ Este repositorio contine información sobre biasmarket website:
 
 ## Modo Local
 
-Haz un fork del repositorio haciendo clic en la opción Fork en la parte superior derecha del repositorio principal.
+1. Haz un fork del repositorio haciendo clic en la opción Fork en la parte superior derecha del repositorio principal.
 
-Instala la BBDD tfg.sql proporcionada dentro de la carpeta biasmarket.
+2. Instala la BBDD tfg.sql proporcionada dentro de la carpeta biasmarket.
 
-Abre el Símbolo del sistema (Command Prompt) en tu ordenador.
+3. Abre el Símbolo del sistema (Command Prompt) en tu ordenador.
 
-Clona el repositorio forkeado sustituyendo <username> por tu propio nombre de usuario de GitHub.
+4. Clona el repositorio forkeado sustituyendo <username> por tu propio nombre de usuario de GitHub.
 
 
 ```bash
     git clone https://github.com/<username>/website/
 ```
 
-Mueve el repositorio dentro de httdocs (si se usa Xammp)
+5. Mueve el repositorio dentro de httdocs (si se usa Xammp)
 
 6. Navega hasta el directorio del sitio web desde el terminal o su IDE.
 
@@ -42,8 +42,11 @@ Mueve el repositorio dentro de httdocs (si se usa Xammp)
 
 ## Introducción a biasmarket
 
+<div align="center">
 
-IMAGEN
+![website](./contenido/iconos/RM-web.png)
+
+</div>
 
 biasmarket es una website de compra-venta de photocards. Los usuario podrán navegar por la web para ver las distintas photocards de idols, sus álbumes, así como todos los grupos de k-pop existentes hasta el momento.
 
@@ -66,11 +69,11 @@ Debido a que las imágenes de las photocards no están guardadas localmente, sin
 
 Tener en cuenta que debido a la gran cantidad de grupos e idols existentes, se ha limitado la API a unos pocos grupos y sus integrantes. Dichos grupos son:
 
-KISS OF LIFE
-i-dle
-LE SSERAFIM
-BLACKPINK
-ITZY
+- KISS OF LIFE
+- i-dle
+- LE SSERAFIM
+- BLACKPINK
+- ITZY
 
 ### Buscador
 
@@ -82,7 +85,7 @@ ITZY
 
 Se pueden buscar photocards utilizando el buscador. Una photocard tiene el siguiente orden:
 
-<span style="color: green; font-size: calc(1rem - 2px);">ITZY - Chaeryeong - Motto Album album photocard</span>
+<span style="color: green;">ITZY - Chaeryeong - Motto Album album photocard</span>
 
 
 Se recomienda buscar por nombre de idol o grupo. Si se desea ambas, se debe escribir en el orden mostrado en el ejemplo.
