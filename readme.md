@@ -76,7 +76,7 @@ ITZY
 
 <div align="center">
 
-[![Buscador](./contenido/iconos/RM-buscador.png)]
+![Buscador](./contenido/iconos/RM-buscador.png)
 
 </div>
 
