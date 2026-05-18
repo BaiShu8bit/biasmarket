@@ -1,11 +1,14 @@
-[![Biasmarket Logo and website](./contenido/iconos/icono.png)]
+<div align="center">
 
+[![Biasmarket Logo and website](./contenido/iconos/readme.png)]
+
+</div>
 ---
 ## Información
 
 Este repositorio contine información sobre biasmarket website:
 
-- API desarrollada con [Next.js](https://nodejs.org/es),
+- API desarrollada con [Next.js](https://nodejs.org/es)
 - Utilización de [Bootstrap](https://getbootstrap.com/) como framework CSS
 
 ## Modo Local
@@ -70,6 +73,12 @@ BLACKPINK
 ITZY
 
 ### Buscador
+
+<div align="center">
+
+[![Buscador](./contenido/iconos/RM-buscador.png)]
+
+</div>
 
 Se pueden buscar photocards utilizando el buscador. Una photocard tiene el siguiente orden:
 
