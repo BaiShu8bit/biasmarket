@@ -85,7 +85,8 @@ Tener en cuenta que debido a la gran cantidad de grupos e idols existentes, se h
 
 Se pueden buscar photocards utilizando el buscador. Una photocard tiene el siguiente orden:
 
-<span style="color: green;">ITZY - Chaeryeong - Motto Album album photocard</span>
+> [!NOTE]
+> ITZY - Chaeryeong - Motto Album album photocard
 
 
 Se recomienda buscar por nombre de idol o grupo. Si se desea ambas, se debe escribir en el orden mostrado en el ejemplo.
