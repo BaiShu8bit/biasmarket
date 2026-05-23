@@ -2,6 +2,11 @@ let allAlbums = [];
 let currentPage = 1;
 let itemsPerPage = 10;
 
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
 function updateItemsPerPage() {
 
   const width = window.innerWidth;
@@ -38,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function cargarGrupo(groupId) {
 
-  fetch(`http://localhost:3000/api/groups/${groupId}`)
+  fetch(`${API_URL}/api/groups/${groupId}`)
     .then((res) => {
 
       if (!res.ok) {
@@ -64,7 +69,7 @@ function cargarGrupo(groupId) {
       renderBreadcrumb(currentGroupName, groupId);
 
       return fetch(
-        `http://localhost:3000/api/albums?groupId=${groupId}`
+        `${API_URL}/api/albums?groupId=${groupId}`
       );
     })
 

@@ -43,10 +43,23 @@
 
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid" id="nav">
-            <div id="logo">
-                <a href="../INDEX/index.php"><img src="../../contenido/iconos/logo.png" alt="Online_card" id="Online_card"></a>
-                <p id="tittle">BiasMarket</p>
-            </div>
+            
+        <!-- ========================================
+             LOGO
+        ========================================= -->
+        <div id="logo" class="d-flex align-items-center">
+
+            <a href="../INDEX/index.php">
+                <img
+                    src="../../contenido/iconos/logo.png"
+                    alt="Online_card"
+                    id="Online_card"
+                    width="76">
+            </a>
+
+            <span id="tittle">biasmarket</span>
+
+        </div>
         </div>
     </nav>
 

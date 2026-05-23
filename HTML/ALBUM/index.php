@@ -99,6 +99,7 @@ $logueado = isset($_SESSION["clienteId"]);
     <script src="../../LIBRERIAS/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
 
     <script src="/biasmarket/scripts/ALBUM/scripts.js"></script>
+    <script src="../../funciones/funciones.js"></script>
 
 </body>
 

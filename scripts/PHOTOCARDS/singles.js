@@ -1,6 +1,11 @@
 let allPhotocards = [];
 let currentPage = 1;
-let itemsPerPage = 8; // ❗ IMPORTANTE: LET, no const
+let itemsPerPage = 8;
+
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
 
 function updateItemsPerPage() {
 
@@ -46,7 +51,7 @@ function cargarPhotocards(albumId) {
     return;
   }
 
-  fetch(`http://localhost:3000/api/photocards/album/${albumId}`)
+  fetch(`${API_URL}/api/photocards/album/${albumId}`)
     .then((res) => {
       if (!res.ok) throw new Error("Error API photocards");
       return res.json();

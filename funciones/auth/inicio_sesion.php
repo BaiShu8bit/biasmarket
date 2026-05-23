@@ -33,7 +33,7 @@ try {
     $instance = ConnectionDB::getInstance();
 
     // 🔥 1. BUSCAR USUARIO SOLO POR NOMBRE
-    $sql = 'SELECT clienteId, nombre_usuario, password FROM clientes WHERE nombre_usuario = :nombre_usuario';
+    $sql = 'SELECT clienteId, nombre_usuario, password, rol FROM clientes WHERE nombre_usuario = :nombre_usuario';
     $stmt = $instance->prepare($sql);
     $stmt->bindValue(':nombre_usuario', $nombre_usuario);
     $stmt->execute();
@@ -53,10 +53,12 @@ try {
             // LOGIN OK
             $_SESSION["clienteId"] = $resultado[0]["clienteId"];
             $_SESSION["nombre_usuario"] = $resultado[0]["nombre_usuario"];
+            $_SESSION["rol"] = $resultado[0]["rol"];
 
             $clienteData = [
                 "status" => "success",
-                "clienteId" => $resultado[0]["clienteId"]
+                "clienteId" => $resultado[0]["clienteId"],
+                "rol" => $resultado[0]["rol"]
             ];
 
             error_log("Login OK: " . json_encode($clienteData));

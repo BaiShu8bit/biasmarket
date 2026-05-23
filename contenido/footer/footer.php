@@ -44,29 +44,10 @@
                                 </h6>
                             </li>
 
-                            <li>
-                                <a href="./?lang=en" class="dropdown-item text-uppercase">
-                                    <span class="me-2">🇺🇸</span> Inglés
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="./?lang=fr" class="dropdown-item text-uppercase">
-                                    <span class="me-2">🇫🇷</span> Francés
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="./?lang=de" class="dropdown-item text-uppercase">
-                                    <span class="me-2">🇩🇪</span> Alemán
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="./?lang=it" class="dropdown-item text-uppercase">
-                                    <span class="me-2">🇮🇹</span> Italiano
-                                </a>
-                            </li>
+                            <li><a href="./?lang=en" class="dropdown-item text-uppercase">🇺🇸 Inglés</a></li>
+                            <li><a href="./?lang=fr" class="dropdown-item text-uppercase">🇫🇷 Francés</a></li>
+                            <li><a href="./?lang=de" class="dropdown-item text-uppercase">🇩🇪 Alemán</a></li>
+                            <li><a href="./?lang=it" class="dropdown-item text-uppercase">🇮🇹 Italiano</a></li>
 
                             <li>
                                 <p class="dropdown-item text-muted py-2 small">
@@ -82,6 +63,13 @@
             </div>
         </div>
 
+        <!-- FECHA ACTUAL (Date object) -->
+        <div class="row mt-2">
+            <div class="col text-center small text-muted" id="fecha_footer">
+                <!-- JS lo rellena -->
+            </div>
+        </div>
+
         <div id="socialmedia" class="row align-items-center">
             <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
                 <div class="sharethis-inline-share-buttons"></div>
@@ -94,3 +82,27 @@
 
     </div>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const fecha = new Date();
+
+    const fechaFormateada = fecha.toLocaleDateString("es-ES", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+
+    const hora = fecha.toLocaleTimeString("es-ES");
+
+    const salida = `${fechaFormateada} - ${hora}`;
+
+    const contenedor = document.getElementById("fecha_footer");
+
+    if (contenedor) {
+        contenedor.textContent = salida;
+    }
+});
+</script>

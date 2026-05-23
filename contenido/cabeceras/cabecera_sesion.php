@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 error_log(
     "cabecera_sesion.php loaded - Session clienteId: " .
-    ($_SESSION["clienteId"] ?? "NOT SET")
+        ($_SESSION["clienteId"] ?? "NOT SET")
 );
 ?>
 
@@ -25,8 +25,7 @@ error_log(
                     src="../../contenido/iconos/logo.png"
                     alt="Online_card"
                     id="Online_card"
-                    width="76"
-                >
+                    width="76">
             </a>
 
             <span id="tittle">biasmarket</span>
@@ -43,8 +42,7 @@ error_log(
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+            aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
 
@@ -69,8 +67,7 @@ error_log(
                     flex-grow-1
                     mt-3
                     mt-xl-0
-                "
-            >
+                ">
 
                 <!-- ==========================
                      PERFIL
@@ -90,16 +87,14 @@ error_log(
                         type="button"
                         id="dropdownPerfil"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
+                        aria-expanded="false">
 
                         <div>
 
                             <img
                                 src="../../contenido/iconos/usuario.png"
                                 alt="logo usuario"
-                                style="width: 25px;"
-                            >
+                                style="width: 25px;">
 
                             <strong id="nombre_usuario">
 
@@ -119,17 +114,27 @@ error_log(
 
                     <ul
                         class="dropdown-menu"
-                        aria-labelledby="dropdownPerfil"
-                    >
+                        aria-labelledby="dropdownPerfil">
 
                         <li>
                             <a
                                 class="dropdown-item"
-                                href="../../HTML/CUENTA/index.php"
-                            >
+                                href="../../HTML/CUENTA/index.php">
                                 CUENTA
                             </a>
                         </li>
+
+                        <?php if (isset($_SESSION["rol"]) && $_SESSION["rol"] === "admin") { ?>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="../../HTML/CUENTA/gestion.php">
+                                    GESTIÓN
+                                </a>
+                            </li>
+
+                        <?php } ?>
 
                     </ul>
 
@@ -153,16 +158,14 @@ error_log(
                         type="button"
                         id="dropdownVender"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
+                        aria-expanded="false">
 
                         <div>
 
                             <img
                                 src="../../contenido/iconos/vender.png"
                                 alt="logo vender"
-                                style="width: 25px;"
-                            >
+                                style="width: 25px;">
 
                             <strong>VENDER</strong>
 
@@ -172,14 +175,12 @@ error_log(
 
                     <ul
                         class="dropdown-menu"
-                        aria-labelledby="dropdownVender"
-                    >
+                        aria-labelledby="dropdownVender">
 
                         <li>
                             <a
                                 class="dropdown-item"
-                                href="../VENDER/index.php"
-                            >
+                                href="../VENDER/index.php">
                                 VENTAS
                             </a>
                         </li>
@@ -206,16 +207,14 @@ error_log(
                         type="button"
                         id="dropdownComprar"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
+                        aria-expanded="false">
 
                         <div>
 
                             <img
                                 src="../../contenido/iconos/comprar.png"
                                 alt="logo comprar"
-                                style="width: 25px;"
-                            >
+                                style="width: 25px;">
 
                             <strong>COMPRAR</strong>
 
@@ -225,14 +224,12 @@ error_log(
 
                     <ul
                         class="dropdown-menu"
-                        aria-labelledby="dropdownComprar"
-                    >
+                        aria-labelledby="dropdownComprar">
 
                         <li>
                             <a
                                 class="dropdown-item"
-                                href="../COMPRAR/compras.php"
-                            >
+                                href="../COMPRAR/compras.php">
                                 COMPRAS
                             </a>
                         </li>
@@ -255,16 +252,14 @@ error_log(
                             flex-column
                             justify-content-center
                             align-items-center
-                        "
-                    >
+                        ">
 
                         <div>
 
                             <img
                                 src="../../contenido/iconos/carrito-de-compras(1).png"
                                 alt="logo carrito"
-                                style="width: 25px;"
-                            >
+                                style="width: 25px;">
 
                             <strong>CARRITO</strong>
 
@@ -285,8 +280,7 @@ error_log(
 
                 <a
                     href="../../funciones/auth/cerrar_sesion.php"
-                    class="btn btn-dark"
-                >
+                    class="btn btn-dark">
                     Cerrar Sesión
                 </a>
 
@@ -307,16 +301,14 @@ error_log(
                 type="search"
                 id="form1"
                 class="form-control"
-                placeholder="Buscar..."
-            >
+                placeholder="Buscar...">
 
         </div>
 
         <button
             type="button"
             class="btn btn-primary busca"
-            id="boton_buscador"
-        >
+            id="boton_buscador">
 
             <i class="fas fa-search"></i>
             Buscar
@@ -332,8 +324,7 @@ error_log(
                 p-2
                 position-absolute
             "
-            style="display: none;"
-        ></div>
+            style="display: none;"></div>
 
     </div>
 

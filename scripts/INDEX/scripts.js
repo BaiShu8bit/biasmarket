@@ -1,3 +1,10 @@
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
+const BASE_URL = "/biasmarket";
+
 document.addEventListener("DOMContentLoaded", function () {
   cargarPhotocards();
   cargarAlbums();
@@ -35,7 +42,7 @@ function cargarPhotocards() {
     return;
   }
 
-  fetch("http://localhost:3000/api/photocards")
+  fetch(`${API_URL}/api/photocards`)
     .then((response) => response.json())
     .then((data) => {
       if (!Array.isArray(data)) {
@@ -117,7 +124,7 @@ function cargarAlbums() {
     return;
   }
 
-  fetch("http://localhost:3000/api/albums")
+  fetch(`${API_URL}/api/albums`)
     .then((res) => res.json())
     .then((data) => {
       if (!Array.isArray(data)) return;
@@ -216,7 +223,7 @@ function cargarGrupos() {
     return;
   }
 
-  fetch("http://localhost:3000/api/groups")
+  fetch(`${API_URL}/api/groups`)
     .then((res) => res.json())
     .then((data) => {
       if (!Array.isArray(data)) return;
@@ -453,6 +460,6 @@ items.forEach(item => {
         if (!albumId) return;
 
         window.location.href =
-            `http://localhost/biasmarket/HTML/PHOTOCARDS/singles.php?album_id=${albumId}`;
+            `${BASE_URL}/HTML/PHOTOCARDS/singles.php?album_id=${albumId}`;
     });
 });

@@ -1,0 +1,142 @@
+/* =========================
+   BASE GENERAL
+========================= */
+
+body {
+    padding-top: 130px;
+    background-color: #f5f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.titulo {
+    margin-top: 150px;
+    margin-bottom: 2.5rem;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.container {
+    max-width: 1200px;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+table {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+table thead {
+    background-color: #000;
+    color: #fff;
+}
+
+table th,
+table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+/* Hover filas */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================
+   BOTÓN ELIMINAR
+========================= */
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* texto no permitido (admin) */
+.text-muted {
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 1199.98px) {
+
+    body {
+        padding-top: 150px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+    body {
+        padding-top: 170px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    /* convierte tabla en scroll horizontal */
+    .container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    .btn-danger {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

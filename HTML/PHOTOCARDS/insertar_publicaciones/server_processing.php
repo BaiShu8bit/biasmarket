@@ -61,6 +61,25 @@ $columns = array(
         }
     ),
 
+    // SUBIDA DE IMAGEN
+    array(
+    'db' => 'imagenCarta',
+    'dt' => 8,
+    'formatter' => function ($d, $row) {
+
+        if (!empty($d)) {
+
+            return '
+                <a href="../../uploads/' . $d . '" target="_blank">
+                    📷
+                </a>
+            ';
+        }
+
+        return '<span style="opacity:0.3;">📷</span>';
+    }
+),
+
     // OBSERVACIONES
     array(
         'db' => 'observacionesCarta',

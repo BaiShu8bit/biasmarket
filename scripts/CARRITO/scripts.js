@@ -1,3 +1,8 @@
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
 document.addEventListener("DOMContentLoaded", () => {
 
     cargarCarrito();
@@ -61,7 +66,7 @@ async function cargarCarrito() {
         try {
 
             const response = await fetch(
-                `http://localhost:3000/api/photocards/${item.photocardId}`
+                `${API_URL}/api/photocards/${item.photocardId}`
             );
 
             photocard = await response.json();

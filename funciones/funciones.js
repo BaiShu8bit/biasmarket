@@ -1,3 +1,8 @@
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
 $(document).ready(function () {
 
     // Asegurar que jQuery está cargado
@@ -147,7 +152,7 @@ $(document).on("click", ".suggestion-item", function () {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/photocards"
+            `${API_URL}/api/photocards`
         );
 
         const photocards =
@@ -193,7 +198,7 @@ $("#form1").on("input", async function () {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/photocards"
+            `${API_URL}/api/photocards`
         );
 
         const photocards =

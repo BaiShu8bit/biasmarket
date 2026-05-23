@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Righteous&family=Syncopate:wght@700&family=Unbounded:wght@900&family=Permanent+Marker&display=swap" rel="stylesheet">
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
     <div class="container-fluid" id="nav">
 

@@ -1,29 +1,57 @@
 <?php
 
-#This class is responsible for the connection with the Database.
 class ConnectionDB {
-   
-      #Declare our attribute that will receive the instance of database.
-      public static $instance;
-   
-      private function __construct() {
-          //
-      }
-   
-      #Create the method that will make the connection with the database and will set this connection in the attribute "instance".
-      public static function getInstance() {
-          #Verify if the attribute already have a connection set in it.
-          if (!isset(self::$instance)) {
-              #Create a new PDO object and make the connection with database.
-              //self::$instance = new PDO('mysql:host=localhost;dbname=tfg', 'tfg', 'Q~p95b94h', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-              self::$instance = new PDO('mysql:host=localhost;dbname=tfg', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-              self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-              self::$instance->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_EMPTY_STRING);
-          }
-          #Return the attribute with the connection setted in it.
-          return self::$instance;
-      }
-   
-  }
+
+    public static $instance;
+
+    private function __construct() {}
+
+    public static function getInstance() {
+
+        if (!isset(self::$instance)) {
+
+            try {
+
+                // 🧠 Detectar entorno automáticamente
+                $host = 'localhost';
+
+                // LOCAL (XAMPP)
+                if ($host === 'localhost' && getenv('HTTP_HOST') === 'localhost') {
+                    $user = 'root';
+                    $pass = '';
+                    $db   = 'tfg';
+                }
+
+                // PRODUCCIÓN (EC2)
+                else {
+                    $user = 'biasuser';
+                    $pass = 'biaspass';
+                    $db   = 'tfg';
+                }
+
+                self::$instance = new PDO(
+                    "mysql:host=$host;dbname=$db;charset=utf8mb4",
+                    $user,
+                    $pass,
+                    [
+                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+                    ]
+                );
+
+                // Recomendado
+                self::$instance->exec("SET NAMES utf8mb4");
+
+            } catch (PDOException $e) {
+
+                error_log("DB Connection Error: " . $e->getMessage());
+
+                die("Error de conexión a la base de datos");
+            }
+        }
+
+        return self::$instance;
+    }
+}
 
 ?>

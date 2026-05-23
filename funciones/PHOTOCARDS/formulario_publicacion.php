@@ -41,13 +41,53 @@ try {
 
     $photocardId = $_POST['photocard_id'];
     $nombreCarta = $_POST['nombre_carta'] ?? 'Sin nombre';
-    $imagenCarta = $_POST['imagen_carta'] ?? '';
+    $nombreImagen = null;
+
+    if (isset($_FILES['form_imagen']) && $_FILES['form_imagen']['error'] === 0) {
+
+        $ext = pathinfo($_FILES['form_imagen']['name'], PATHINFO_EXTENSION);
+        $nombreImagen = uniqid('img_') . '.' . $ext;
+
+        $rutaDestino = $_SERVER['DOCUMENT_ROOT'] . "/biasmarket/contenido/uploads/" . $nombreImagen;
+
+        move_uploaded_file(
+            $_FILES['form_imagen']['tmp_name'],
+            $rutaDestino
+        );
+    }
+
+    $imagenCarta = $nombreImagen;
+
     $estadoCarta = $_POST['form_estado'];
     $observacionesCarta = $_POST['form_observaciones'] ?? '';
     $precioCarta = $_POST['form_precio'];
     $cantidadCarta = $_POST['form_cantidad'];
 
     $instance = ConnectionDB::getInstance();
+
+    /*
+    ============================================
+    VALIDAR IMAGEN
+    ============================================
+    */
+    $nombreImagen = null;
+
+    if (isset($_FILES['form_imagen']) && $_FILES['form_imagen']['error'] === 0) {
+
+        $ext = pathinfo($_FILES['form_imagen']['name'], PATHINFO_EXTENSION);
+        $nombreImagen = uniqid('img_') . '.' . $ext;
+
+        $rutaDestino = __DIR__ . "/../../contenido/uploads/" . $nombreImagen;
+
+        if (!file_exists(__DIR__ . "/../../contenido/uploads/")) {
+            mkdir(__DIR__ . "/../../contenido/uploads/", 0777, true);
+        }
+
+        move_uploaded_file(
+            $_FILES['form_imagen']['tmp_name'],
+            $rutaDestino
+        );
+    }
 
     /*
     ============================================
@@ -147,6 +187,7 @@ try {
                 clienteId,
                 photocardId,
                 estadoCarta,
+                imagenCarta,
                 observacionesCarta,
                 precioCarta,
                 cantidadCarta
@@ -157,6 +198,7 @@ try {
                 :clienteId,
                 :photocardId,
                 :estadoCarta,
+                :imagenCarta,
                 :observacionesCarta,
                 :precioCarta,
                 :cantidadCarta
@@ -168,6 +210,7 @@ try {
         $stmtInsert->bindValue(':clienteId', $clienteId);
         $stmtInsert->bindValue(':photocardId', $photocardId);
         $stmtInsert->bindValue(':estadoCarta', $estadoCarta);
+        $stmtInsert->bindValue(':imagenCarta', $imagenCarta);
         $stmtInsert->bindValue(':observacionesCarta', $observacionesCarta);
         $stmtInsert->bindValue(':precioCarta', $precioCarta);
         $stmtInsert->bindValue(':cantidadCarta', $cantidadCarta);

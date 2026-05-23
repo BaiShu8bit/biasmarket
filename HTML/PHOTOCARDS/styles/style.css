@@ -505,9 +505,10 @@
 }
 
 .table-responsive {
-    width: 50%;
-    overflow-x: auto;
-    margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  overflow-x: auto;
+  margin: 0 auto;
 }
 
 .unavailable {

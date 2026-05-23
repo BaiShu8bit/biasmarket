@@ -164,7 +164,7 @@ $logueado = isset($_SESSION["clienteId"]);
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <form name="form_publicacion" id="form_publicacion">
+                                <form name="form_publicacion" id="form_publicacion" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <input type="hidden" id="photocard_id" name="photocard_id">
                                         <input type="hidden" id="nombre_carta_hidden" name="nombre_carta">
@@ -181,6 +181,16 @@ $logueado = isset($_SESSION["clienteId"]);
                                             <option value="good">Bueno</option>
                                             <option value="poor">Dañada</option>
                                         </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="form_imagen" class="form-label"><strong>Imagen de la carta</strong></label>
+                                        <input
+                                            type="file"
+                                            class="form-control"
+                                            id="form_imagen"
+                                            name="form_imagen"
+                                            accept="image/*"
+                                        >
                                     </div>
                                     <div class="mb-3">
                                         <label for="form_observaciones" class="form-label"><strong>Observaciones</strong></label>
@@ -330,6 +340,7 @@ $logueado = isset($_SESSION["clienteId"]);
 
                     <th>Vendedor</th>
                     <th>Estado</th>
+                    <th>Imagen</th>
                     <th>Observaciones</th>
                     <th data-sort="precioCarta">Precio ▲▼</th>
                     <th>Cantidad</th>
@@ -353,6 +364,24 @@ $logueado = isset($_SESSION["clienteId"]);
 
                             <td>
                                 <?php echo traducirEstadoBadge($publicacion['estadoCarta']); ?>
+                            </td>
+
+                            <td style="text-align:center;">
+
+                                <?php if (!empty($publicacion['imagenCarta'])) { ?>
+
+                                    <a href="/biasmarket/contenido/uploads/<?php echo $publicacion['imagenCarta']; ?>"
+                                    target="_blank"
+                                    title="Ver imagen">
+                                        📷
+                                    </a>
+
+                                <?php } else { ?>
+
+                                    <span style="opacity: 0.3;">📷</span>
+
+                                <?php } ?>
+
                             </td>
 
                             <td>

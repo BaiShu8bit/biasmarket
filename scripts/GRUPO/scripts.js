@@ -2,6 +2,11 @@ let gruposGlobal = [];
 let paginaActual = 1;
 const porPagina = 5;
 
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
 document.addEventListener("DOMContentLoaded", () => {
     cargarGrupos();
     renderBreadcrumb();
@@ -9,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function cargarGrupos() {
 
-    fetch("http://localhost:3000/api/groups")
+    fetch(`${API_URL}/api/groups`)
         .then(res => res.json())
         .then(data => {
 

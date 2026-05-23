@@ -21,7 +21,7 @@ error_log("Session started in index.php");
     <?php } ?>
 
 
-    <link rel="icon" href="../../contenido/iconos/favico.webp">
+    <link rel="icon" href="../../contenido/iconos/favicon.webp">
 
     <!-- Bootstrap core CSS -->
     <link href="../../LIBRERIAS/assets/dist/css/bootstrap.min.css" rel="stylesheet">

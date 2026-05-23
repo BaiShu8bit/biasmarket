@@ -1,5 +1,10 @@
 console.log("scripts.js cargado");
 
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : `http://${window.location.hostname}:3000`;
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const params = new URLSearchParams(window.location.search);
@@ -31,7 +36,7 @@ CARGAR PHOTOCARD
 
 function cargarFicha(id) {
 
-    fetch(`http://localhost:3000/api/photocards/${id}`)
+    fetch(`${API_URL}/api/photocards/${id}`)
 
         .then(res => res.json())
 
@@ -157,7 +162,7 @@ function iniciarFormulario(photocardId) {
 
         e.preventDefault();
 
-        const formData = new FormData();
+        const formData = new FormData(formulario);
 
         /*
         ============================
@@ -199,11 +204,6 @@ function iniciarFormulario(photocardId) {
         formData.append(
             "nombre_carta",
             document.getElementById("nombre_carta").textContent
-        );
-
-        formData.append(
-            "imagen_carta",
-            document.getElementById("imagen_ficha_carta").src
         );
 
         /*
