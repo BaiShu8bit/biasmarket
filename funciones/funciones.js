@@ -29,7 +29,7 @@ $(document).ready(function () {
             contentType: false,
 
             success: function (response) {
-                console.log("Raw response:", response);
+                console.log("RAW:", response);
 
                 // Parse the JSON response (it comes as a string)
                 var data = JSON.parse(response);

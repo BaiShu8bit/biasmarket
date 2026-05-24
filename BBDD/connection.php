@@ -12,21 +12,21 @@ class ConnectionDB {
 
             try {
 
-                // 🧠 Detectar entorno automáticamente
-                $host = 'localhost';
+                // 🔥 CONFIG DIRECTA Y SEGURA
 
-                // LOCAL (XAMPP)
-                if ($host === 'localhost' && getenv('HTTP_HOST') === 'localhost') {
+                $host = 'localhost';
+                $db   = 'tfg';
+
+                // 👉 LOCAL (XAMPP)
+                if (gethostname() === 'DESKTOP-LOCAL' || $_SERVER['HTTP_HOST'] === 'localhost') {
                     $user = 'root';
                     $pass = '';
-                    $db   = 'tfg';
                 }
 
-                // PRODUCCIÓN (EC2)
+                // 👉 PRODUCCIÓN (EC2)
                 else {
                     $user = 'biasuser';
                     $pass = 'biaspass';
-                    $db   = 'tfg';
                 }
 
                 self::$instance = new PDO(
@@ -39,13 +39,11 @@ class ConnectionDB {
                     ]
                 );
 
-                // Recomendado
                 self::$instance->exec("SET NAMES utf8mb4");
 
             } catch (PDOException $e) {
 
                 error_log("DB Connection Error: " . $e->getMessage());
-
                 die("Error de conexión a la base de datos");
             }
         }

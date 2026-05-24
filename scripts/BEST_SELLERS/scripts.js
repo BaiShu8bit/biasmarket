@@ -2,11 +2,6 @@ let todasLasCartas = [];
 
 let cartasMostradas = 12;
 
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:3000"
-    : `http://${window.location.hostname}:3000`;
-
 // ======================================
 // LOAD
 // ======================================

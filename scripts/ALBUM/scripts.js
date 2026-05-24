@@ -2,11 +2,6 @@ let allAlbums = [];
 let currentPage = 1;
 let itemsPerPage = 10;
 
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:3000"
-    : `http://${window.location.hostname}:3000`;
-
 function updateItemsPerPage() {
 
   const width = window.innerWidth;
