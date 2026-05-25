@@ -244,21 +244,6 @@ label.error {
     min-width: 150px;
 }
 
-  #Carousel-slider {
-
-      position: relative;
-      width: 100%;
-      height: 500px;
-      margin-top: -80px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      background-color: #0b5d87;
-  }
-
 /* =========================================================
    7. NAV ELEMENTS
 ========================================================= */
@@ -368,9 +353,18 @@ footer ul.nav {
     }
 
     .navbar-collapse {
+
+        /* position: absolute; */
+        top: calc(var(--navbar-height) + var(--search-height));
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        z-index: 2000;
+
         padding: 15px;
-        margin-top: 75px;
-        z-index: 1045;
     }
 
     #cont_buscador .form-outline {
@@ -401,6 +395,22 @@ footer ul.nav {
 
     #logo img {
         width: 45px;
+    }
+
+        .navbar-collapse {
+
+        position: absolute;
+        top: calc(var(--navbar-height) + var(--search-height));
+
+        left: 0;
+        margin-top: 10px;
+        width: 100%;
+
+        background: white;
+
+        z-index: 2000;
+
+        padding: 12px;
     }
 
     .navbar-toggler {

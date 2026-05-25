@@ -196,6 +196,10 @@ button {
     -ms-overflow-style: none;
 }
 
+#Carousel-slider {
+    margin-top: 80px;
+}
+
 /* =========================================================
    6. LOGIN / FORMULARIOS
 ========================================================= */
@@ -495,6 +499,11 @@ footer ul.nav {
 
         --search-height: 60px;
     }
+
+    #Carousel-slider {
+    margin-top: 63px;
+}
+
 
     /* =========================
        LOGO
