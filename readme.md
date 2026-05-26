@@ -50,10 +50,17 @@ Este repositorio contine información sobre biasmarket website:
 
 biasmarket es una website de compra-venta de photocards. Los usuario podrán navegar por la web para ver las distintas photocards de idols, sus álbumes, así como todos los grupos de k-pop existentes hasta el momento.
 
+### Usuario (admin)
+
+Si se desea acceder como usuario (admin), se debe utilizar las siguientes credenciales:
+
+| **Usuario** | **Contraseña** |
+| :--- | :--- |
+| baishuo | admin1234 |
+
 ### Funcionalidades
 
 Dentro de biasmarket, se puede hacer lo siguiente:
-
 
 - Registrarse como usuario.
 - Vender / Comprar photocards (es obligatorio registro previo).
@@ -65,7 +72,7 @@ Se ha creado una API con las photocards, álbumes y grupos para que se pueda ver
 
 Debido a que las imágenes de las photocards no están guardadas localmente, sino ubicadas en la nube, existe la posibilidad de que algunas imágenes no aparezcan.
 
-### Importante
+### ❗Importante
 
 Tener en cuenta que debido a la gran cantidad de grupos e idols existentes, se ha limitado la API a unos pocos grupos y sus integrantes. Dichos grupos son:
 
@@ -117,3 +124,7 @@ Una vez añadida la photocard, esta aparecerá dentro del carrito. Para comprarl
 ### Mis compras
 
 Una vez realizada la compra, podrás verla listada dentro de COMPRAR > MIS COMPRAS. También podrás descargarla en .pdf
+
+### Mis ventas
+
+Se puede ver un registro de las ventas que has realizado como usuario. Estás estarán listadas dentro de VENDER > MIS VENTAS (tener en cuenta que solo se mostrarán las ventas realizadas por el usuario actual).

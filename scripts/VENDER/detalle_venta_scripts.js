@@ -1,124 +1,225 @@
-if (!localStorage.getItem("clienteId")) {
-    location.href = "../INDEX/index.php";
-} else {
+$(document).ready(function () {
 
-    var clienteId = localStorage.getItem("clienteId");
+    // Comprobar login
+    if (!localStorage.getItem("clienteId")) {
 
-    var queryString = window.location.search;
+        location.href = "../INDEX/index.php";
+        return;
+    }
 
-    var params = new URLSearchParams(queryString);
+    const clienteId =
+        localStorage.getItem("clienteId");
 
-    var itemValue = params.get('item');
+    // Obtener ?item=
+    const params =
+        new URLSearchParams(window.location.search);
 
-    var itemValueCod = decodeURIComponent(itemValue);
+    const itemValue =
+        params.get("item");
+
+    const itemValueCod =
+        decodeURIComponent(itemValue);
 
     console.log(itemValueCod);
 
-    var formData = new FormData();
-    formData.append('clienteId', clienteId);
-    formData.append('pedidoId', itemValueCod);
-
     $.ajax({
-        url: '/funciones/VENDER/datos_venta.php',
+        url: '../../funciones/VENDER/datos_venta.php',
         type: 'POST',
-        data: formData,
-        processData: false,
-        contentType: false,
-        success: function (response) {
 
-            const datos = JSON.parse(response);
+        data: {
+            clienteId: clienteId,
+            pedidoId: itemValueCod
+        },
 
-            document.getElementById("pedidoId").innerText = "Venta #" + datos[0].pedidoId;
+        dataType: 'json',
 
-            if (datos[0].estado_pedido == "enviado") {
+        success: function (datos) {
 
-                document.getElementById("confirmar_envio").style.display = "none";
+            console.log(datos);
 
-                if (datos[0].gastos_envio == "5€") {
+            if (!datos || datos.length === 0) {
 
-                    document.getElementById("numero_seguimiento").style.display = "block";
+                console.error("No hay datos");
+                return;
+            }
+
+            // Limpiar por si acaso
+            $('#cartas').html('');
+
+            document.getElementById("pedidoId").innerText =
+                "Venta #" + datos[0].pedidoId;
+
+            // ====================
+            // PEDIDO ENVIADO
+            // ====================
+            if (datos[0].estado_pedido === "enviado") {
+
+                document.getElementById("confirmar_envio")
+                    .style.display = "none";
+
+                if (datos[0].gastos_envio === "5€") {
+
+                    document.getElementById("numero_seguimiento")
+                        .style.display = "block";
 
                     if (datos[0].numero_seguimiento != null) {
 
-                        document.getElementById("input_numero_seguimiento").value = datos[0].numero_seguimiento;
-                        document.getElementById("input_numero_seguimiento").disabled = true;
+                        document.getElementById("input_numero_seguimiento")
+                            .value =
+                            datos[0].numero_seguimiento;
+
+                        document.getElementById("input_numero_seguimiento")
+                            .disabled = true;
 
                     } else {
 
-                        document.getElementById("button_numero_seguimiento").style.display = "block";
+                        document.getElementById("button_numero_seguimiento")
+                            .style.display = "block";
                     }
                 }
             }
 
-            if (datos[0].estado_pedido == "recibido") {
+            // ====================
+            // PEDIDO RECIBIDO
+            // ====================
+            if (datos[0].estado_pedido === "recibido") {
 
-                document.getElementById("evaluacion_pedido").style.display = "block";
-                document.getElementById("confirmar_envio").style.display = "none";
-                document.getElementById("evaluacion_general").innerHTML = "<strong>Evaluación general: </strong>" + datos[0].evaluacion;
-                document.getElementById("evaluacion_comentarios").innerHTML = "<strong>Comentarios: </strong>" + datos[0].comentarios;
+                document.getElementById("evaluacion_pedido")
+                    .style.display = "block";
+
+                document.getElementById("confirmar_envio")
+                    .style.display = "none";
+
+                document.getElementById("evaluacion_general")
+                    .innerHTML =
+                    "<strong>Evaluación general: </strong>" +
+                    datos[0].evaluacion;
+
+                document.getElementById("evaluacion_comentarios")
+                    .innerHTML =
+                    "<strong>Comentarios: </strong>" +
+                    datos[0].comentarios;
             }
 
+            // ====================
+            // PINTAR DATOS
+            // ====================
             datos.forEach(venta => {
 
                 const resumen = `
-                    <strong style="color: #012269;">Resumen:</strong><br><br>
+                    <strong style="color: #012269;">
+                        Resumen:
+                    </strong>
+                    <br><br>
+
                     <div class="row">
                         <strong>Contenido:</strong>
-                        <span class="value">${venta.articulos}</span>
+                        <span class="value">
+                            ${venta.articulos}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>Valor del pedido:</strong>
-                        <span class="value">${venta.valor_pedido}</span>
+                        <span class="value">
+                            ${venta.valor_pedido}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>Gastos de envío:</strong>
-                        <span class="value" id="gastos_envio">${venta.gastos_envio}</span>
+                        <span class="value" id="gastos_envio">
+                            ${venta.gastos_envio}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>Total:</strong>
-                        <span class="value" id="total_pedido">${venta.total_pedido}</span>
+                        <span class="value" id="total_pedido">
+                            ${venta.total_pedido}
+                        </span>
                     </div>
                 `;
-                $('#resumen-pedido').html(resumen);
+
+                $('#resumen-pedido')
+                    .html(resumen);
 
                 const direccion = `
-                    <strong style="color: #012269;">Dirección:</strong><br><br>
+                    <strong style="color: #012269;">
+                        Dirección:
+                    </strong>
+                    <br><br>
+
                     <div class="row">
                         <strong>Nombre:</strong>
-                        <span class="value">${venta.direccion_nombreC}</span>
+                        <span class="value">
+                            ${venta.direccion_nombreC}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>Calle:</strong>
-                        <span class="value">${venta.direccion_calleC}</span>
+                        <span class="value">
+                            ${venta.direccion_calleC}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>Código Postal:</strong>
-                        <span class="value">${venta.direccion_codpostC} ${venta.direccion_localidadC}</span>
+                        <span class="value">
+                            ${venta.direccion_codpostC}
+                            ${venta.direccion_localidadC}
+                        </span>
                     </div>
+
                     <div class="row">
                         <strong>País:</strong>
-                        <span class="value">${venta.direccion_paisC}</span>
+                        <span class="value">
+                            ${venta.direccion_paisC}
+                        </span>
                     </div>
                 `;
-                $('#direccion-comprador').html(direccion);
+
+                $('#direccion-comprador')
+                    .html(direccion);
 
                 const cartaHtml = `
                     <div class="carta">
-                        <strong>Carta:</strong> 
-                        <a href="https://onlinecardtcg.com/HTML/FICHA_CARTA/index.php?item=${encodeURIComponent(venta.nombre_carta)}" target="_blank">${venta.nombre_carta}</a>&nbsp;&nbsp;&nbsp;
-                        <strong>Precio:</strong> ${venta.precio_carta}&nbsp;&nbsp;&nbsp;
-                        <strong>Idioma:</strong> ${venta.idioma_carta}&nbsp;&nbsp;&nbsp;
-                        <strong>Observación:</strong> ${venta.observacion_carta}
+
+                        <strong>Carta:</strong>
+
+                        <a href="../../HTML/FICHA_CARTA/index.php?item=${encodeURIComponent(venta.nombre_carta)}"
+                           target="_blank">
+
+                            ${venta.nombre_carta}
+
+                        </a>
+
+                        &nbsp;&nbsp;&nbsp;
+
+                        <strong>Precio:</strong>
+                        ${venta.precio_carta}
+
+                        &nbsp;&nbsp;&nbsp;
+
+                        <strong>Idioma:</strong>
+                        ${venta.idioma_carta}
+
+                        &nbsp;&nbsp;&nbsp;
+
+                        <strong>Observación:</strong>
+                        ${venta.observacion_carta}
                     </div>
                 `;
+
                 $('#cartas').append(cartaHtml);
             });
-
         },
-        error: function () {
-            
-            console.error("Error al cargar contenido dinámico");
+
+        error: function (xhr, status, error) {
+
+            console.error("Error AJAX:", error);
+            console.log(xhr.responseText);
         }
     });
-
-}
+});

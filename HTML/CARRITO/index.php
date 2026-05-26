@@ -163,8 +163,9 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="../../LIBRERIAS/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
 
-    <script src="../../scripts/scripts.js" defer></script>
-    <script src="../../scripts/CARRITO/scripts.js" defer></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/CARRITO/scripts.js"></script>
+    <script src="../../funciones/funciones.js"></script>
 
 </body>
 

@@ -1,47 +1,37 @@
 <?php
+
 require('../../BBDD/connection.php');
 
-if (
-    isset($_REQUEST['clienteId']) &&
-    isset($_REQUEST['pedidoId'])
-) {
+header('Content-Type: application/json');
 
-    $clienteId = $_REQUEST['clienteId'];
-    $pedidoId = $_REQUEST['pedidoId'];
+session_start();
 
-    $resultado = datos_venta($clienteId, $pedidoId);
+if (!isset($_SESSION['clienteId'])) {
+
+    echo json_encode(["error" => "No autorizado"]);
+    exit;
 }
 
-function datos_venta($clienteId, $pedidoId)
-{
-    $instance = ConnectionDB::getInstance();
+$clienteId = $_SESSION['clienteId'];
 
-    //EN ESTE SACAMOS LOS DATOS
-    $sql = 'SELECT nombre_usuario FROM clientes WHERE clienteId = :clienteId';
-    
-    $stmt = $instance->prepare($sql);
-    $stmt->bindValue(':clienteId', $clienteId);
+$instance = ConnectionDB::getInstance();
 
-    $stmt->execute();
-    $resultado2 = $stmt->fetch(PDO::FETCH_ASSOC);
+/*
+====================================
+OBTENER PEDIDOS DEL CLIENTE
+====================================
+*/
 
-    if (!empty($resultado2)) {
+$sql = "SELECT * 
+        FROM pedidos 
+        WHERE clienteId = :clienteId
+        ORDER BY fechaPedido DESC";
 
-        $sql = 'SELECT * FROM ventas WHERE nombre_usuarioV = :nombre_usuarioV AND pedidoId = :pedidoId';
-    
-        $stmt = $instance->prepare($sql);
-        $stmt->bindValue(':nombre_usuarioV', $resultado2["nombre_usuario"]);
-        $stmt->bindValue(':pedidoId', $pedidoId);
-    
-        $stmt->execute();
-        $resultado2 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$stmt = $instance->prepare($sql);
+$stmt->bindValue(':clienteId', $clienteId);
+$stmt->execute();
 
-        echo json_encode($resultado2);
-        exit;
-    } else {
+$pedidos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        $mensaje = "Error";
-
-        echo $mensaje;
-    }
-}
+echo json_encode($pedidos);
+exit;
