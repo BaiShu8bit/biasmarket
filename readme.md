@@ -13,34 +13,37 @@ Este repositorio contine información sobre biasmarket website:
 
 ## Modo Local
 
-1. Haz un fork del repositorio haciendo clic en la opción Fork en la parte superior derecha del repositorio principal.
+Para que el proyecto funcione correctamente en modo local, es necesario seguir los siguientes pasos:
 
-2. Instala la BBDD tfg.sql proporcionada dentro de la carpeta biasmarket.
+1. Clonar el repositorio.
 
-3. Abre el Símbolo del sistema (Command Prompt) en tu ordenador.
+2. Mueve el repositorio dentro de htdocs (si se usa Xammp).
 
-4. Clona el repositorio forkeado sustituyendo <username> por tu propio nombre de usuario de GitHub.
-
+3. Instala la BBDD tfg.sql proporcionada dentro de la carpeta biasmarket.
 
 ```bash
-    git clone https://github.com/<username>/website/
+    tfg.sql
 ```
 
-5. Mueve el repositorio dentro de httdocs (si se usa Xammp)
-
-6. Navega hasta el directorio del sitio web desde el terminal o su IDE.
+4. Navega hasta el directorio del sitio web desde el terminal o su IDE.
 
 ```bash
     cd biasmarket
 ```
 
-7. Ejecuta el sitio web localmente.
+7. Instalar dependencias Node.js (en caso de no estar instalado previamente):
+
+```bash
+    npm install
+```
+
+8. Ejecuta el sitio web en modo desarrollo.
 
 ```bash
     npm run dev
 ```
 
-También se puede ejecutar con:
+También se puede ejecutar en modo producción con:
 
 ```bash
     npm start
