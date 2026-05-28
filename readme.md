@@ -17,6 +17,10 @@ Para que el proyecto funcione correctamente en modo local, es necesario seguir l
 
 1. Clonar el repositorio.
 
+```bash
+    git clone https://github.com/<username>/biasmarket.git
+```
+
 2. Mueve el repositorio dentro de htdocs (si se usa Xammp).
 
 3. Instala la BBDD tfg.sql proporcionada dentro de la carpeta biasmarket.
@@ -66,6 +70,10 @@ Si se desea acceder como usuario (admin), se debe utilizar las siguientes creden
 | **Usuario** | **Contraseña** |
 | :--- | :--- |
 | baishuo | admin1234 |
+
+Este usuario tiene permisos de administrador, por lo que puede realizar todas las acciones de un usuario normal, además de:
+
+- Gestionar usuarios (crear, editar, eliminar).
 
 ### Funcionalidades
 
