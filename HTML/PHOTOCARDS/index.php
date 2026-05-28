@@ -342,7 +342,7 @@ $logueado = isset($_SESSION["clienteId"]);
                     <th>Estado</th>
                     <th>Imagen</th>
                     <th>Observaciones</th>
-                    <th data-sort="precioCarta">Precio ▲▼</th>
+                    <th data-sort="precioCarta">Precio</th>
                     <th>Cantidad</th>
                     <th>Carrito</th>
 
@@ -438,7 +438,7 @@ $logueado = isset($_SESSION["clienteId"]);
 
                     <tr>
 
-                        <td class="unavailable" colspan="6">
+                        <td class="unavailable" colspan="7">
                             Ninguna carta disponible en este momento
                         </td>
 
@@ -451,6 +451,8 @@ $logueado = isset($_SESSION["clienteId"]);
         </table>
 
     </div>
+
+    <div id="toast" class="toast"></div>
 
     <br><br>
 

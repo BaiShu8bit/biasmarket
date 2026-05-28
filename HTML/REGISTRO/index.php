@@ -81,7 +81,7 @@
             </div>
 
             <div class="col mb-3">
-                <label for="apellido2" class="form-label">Segundo apellido*</label>
+                <label for="apellido2" class="form-label">Segundo apellido</label>
                 <input type="text" class="form-control" id="apellido2" name="apellido2" aria-describedby="apellido2" placeholder="Apellidos">
                 <p id="mensaje_apellido2"></p>
             </div>

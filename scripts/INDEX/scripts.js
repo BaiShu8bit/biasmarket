@@ -210,50 +210,118 @@ function cargarAlbums() {
 // GRUPOS
 // ----------------------- //
 function cargarGrupos() {
-  const contenedorDestacado = document.getElementById("grupo_destacado");
-  const lista = document.getElementById("grupo_list");
+
+  const contenedorDestacado =
+    document.getElementById("grupo_destacado");
+
+  const lista =
+    document.getElementById("grupo_list");
 
   if (!contenedorDestacado || !lista) {
-    console.error("No existen los contenedores de grupos");
+
+    console.error(
+      "No existen los contenedores de grupos"
+    );
+
     return;
   }
+
+  // =========================
+  // IDS FIJOS
+  // =========================
+
+  const grupoDestacadoId =
+    "cmeqz8tkb005d136wwr54jpjy";
+
+  const otrosIds = [
+
+    "cmeqz948i00d4136wyoglur5d",
+    "cmhaqwl1u000xjr049t6gv4bk",
+    "cmeqz8pd4002e136wxlrxz44a",
+    "cmeqz8m6a0004136w21hm3ty4"
+
+  ];
 
   fetch(`${API_URL}/api/groups`)
     .then((res) => res.json())
     .then((data) => {
-      if (!Array.isArray(data)) return;
 
-      const aleatorios = data.sort(() => Math.random() - 0.5);
+      if (!Array.isArray(data))
+        return;
 
-      const principal = aleatorios[0];
-      const otros = aleatorios.slice(1, 5);
+      // =========================
+      // BUSCAR GRUPOS
+      // =========================
+
+      const principal =
+        data.find(
+          grupo =>
+            grupo.id === grupoDestacadoId
+        );
+
+      const otros =
+        otrosIds
+          .map(id =>
+            data.find(
+              grupo =>
+                grupo.id === id
+            )
+          )
+          .filter(grupo => grupo);
+
+      if (!principal) {
+
+        console.error(
+          "No se encontró el grupo destacado"
+        );
+
+        return;
+      }
 
       // =========================
       // ⭐ GRUPO DESTACADO
       // =========================
 
-      const card = document.createElement("div");
-      card.className = "card-base card-small";
+      const card =
+        document.createElement("div");
 
-      const link = document.createElement("a");
-      link.href = `../ALBUM/index.php?id=${principal.id}`;
+      card.className =
+        "card-base card-small";
 
-      const img = document.createElement("img");
-      img.src = principal.image_url;
+      const link =
+        document.createElement("a");
 
-      const title = document.createElement("h3");
-      title.textContent = principal.name;
+      link.href =
+        `../ALBUM/index.php?id=${principal.id}`;
 
-      const fandom = document.createElement("p");
-      fandom.textContent = principal.fandom_name;
+      const img =
+        document.createElement("img");
+
+      img.src =
+        principal.image_url;
+
+      const title =
+        document.createElement("h3");
+
+      title.textContent =
+        principal.name;
+
+      const fandom =
+        document.createElement("p");
+
+      fandom.textContent =
+        principal.fandom_name;
 
       link.appendChild(img);
+
       card.appendChild(link);
       card.appendChild(title);
       card.appendChild(fandom);
 
       contenedorDestacado.innerHTML = "";
-      contenedorDestacado.appendChild(card);
+
+      contenedorDestacado
+        .appendChild(card);
 
       // =========================
       // 📋 LISTA
@@ -262,34 +330,63 @@ function cargarGrupos() {
       lista.innerHTML = "";
 
       otros.forEach((grupo) => {
-        const li = document.createElement("li");
 
-        // fila interna (flex)
-        const row = document.createElement("div");
-        row.classList.add("list-row");
+        const li =
+          document.createElement("li");
 
-        // nombre grupo (hacerlo clickeable)
-        const text = document.createElement("span");
-        const textLink = document.createElement("a");
-        textLink.href = `../ALBUM/index.php?id=${grupo.id}`;
-        textLink.textContent = grupo.name;
-        textLink.style.color = "inherit";
-        textLink.style.textDecoration = "none";
+        const row =
+          document.createElement("div");
+
+        row.classList.add(
+          "list-row"
+        );
+
+        const text =
+          document.createElement("span");
+
+        const textLink =
+          document.createElement("a");
+
+        textLink.href =
+          `../ALBUM/index.php?id=${grupo.id}`;
+
+        textLink.textContent =
+          grupo.name;
+
+        textLink.style.color =
+          "inherit";
+
+        textLink.style.textDecoration =
+          "none";
+
         text.appendChild(textLink);
 
-        // wrapper icono + imagen (CLAVE)
-        const wrapper = document.createElement("span");
-        wrapper.classList.add("preview-wrapper");
+        const wrapper =
+          document.createElement("span");
 
-        const icon = document.createElement("span");
-        icon.classList.add("preview-icon");
+        wrapper.classList.add(
+          "preview-wrapper"
+        );
+
+        const icon =
+          document.createElement("span");
+
+        icon.classList.add(
+          "preview-icon"
+        );
+
         icon.textContent = "📷";
 
-        const img = document.createElement("img");
-        img.classList.add("preview-image");
-        img.src = grupo.image_url;
+        const img =
+          document.createElement("img");
 
-        // montar estructura
+        img.classList.add(
+          "preview-image"
+        );
+
+        img.src =
+          grupo.image_url;
+
         wrapper.appendChild(icon);
         wrapper.appendChild(img);
 
@@ -297,11 +394,16 @@ function cargarGrupos() {
         row.appendChild(wrapper);
 
         li.appendChild(row);
+
         lista.appendChild(li);
       });
     })
     .catch((err) => {
-      console.error("Error cargando grupos:", err);
+
+      console.error(
+        "Error cargando grupos:",
+        err
+      );
     });
 }
 

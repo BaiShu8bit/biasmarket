@@ -222,7 +222,7 @@ function iniciarFormulario(photocardId) {
 
             if (data.success) {
 
-                alert("¡Photocard puesta en venta correctamente!");
+                /* alert("¡Photocard puesta en venta correctamente!"); */
 
                 formulario.reset();
 
@@ -305,7 +305,7 @@ function cargar() {
             if (data.length === 0) {
                 html = `
                     <tr>
-                        <td colspan="6" class="text-center">
+                        <td colspan="7" class="text-center">
                             Ninguna carta disponible en este momento
                         </td>
                     </tr>
@@ -396,8 +396,27 @@ document.addEventListener("click", function (e) {
 
     console.log("CARRITO:", carrito);
 
-    alert("Photocard añadida al carrito");
+    mostrarToast("Añadido al carrito");
 });
+function mostrarToast(msg) {
+
+    const toast =
+        document.getElementById("toast");
+
+    console.log("MSG:", msg);
+    console.log("TOAST:", toast);
+
+    toast.textContent = msg || "ERROR";
+    toast.style.background = "green"; // debug visual
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
+}
+
+
 
 // ==========================
 // EDITAR PUBLICACIÓN

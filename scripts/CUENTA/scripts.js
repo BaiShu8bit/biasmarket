@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (res.status === "success") {
 
-                    alert("Dirección guardada correctamente");
+                    /* alert("Dirección guardada correctamente"); */
 
                     modal.style.display = "none";
 
@@ -146,8 +146,10 @@ function renderDireccionPrincipal(d) {
         return;
     }
 
-    document.getElementById("linea1").textContent = d.nombre || "";
-    document.getElementById("linea2").textContent = d.linea2 || "";
+    const nombreCompleto =
+        `${d.nombre || ""} ${d.linea2 || ""}`.trim();
+
+    document.getElementById("linea1").textContent = nombreCompleto;
     document.getElementById("calle").textContent = d.calle || "";
     document.getElementById("codpostal").textContent = d.codpostal + " " + d.localidad;
     document.getElementById("pais").textContent = d.pais || "";

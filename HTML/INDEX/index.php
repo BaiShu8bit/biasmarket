@@ -111,7 +111,7 @@ error_log("Session started in index.php");
 
     <!--IMAGENES DE CARTAS(API)-->
     <div class="container">
-        <h1 class="text_tittle mt-4"><span>📈</span>Las más vendidas</h1>
+        <h1 class="text_tittle mt-4"><span>📈</span>Las más destacadas</h1>
         <hr class="divider">
 
         <div id="imagenes" class="row justify-content-center promo--end">

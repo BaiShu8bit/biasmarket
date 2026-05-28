@@ -102,6 +102,7 @@ try {
         $clienteId = $instance->lastInsertId();
 
         $_SESSION["clienteId"] = $clienteId;
+        $_SESSION["nombre_usuario"] = $nombre_usuario;
 
         echo json_encode([
             "status" => "success",
