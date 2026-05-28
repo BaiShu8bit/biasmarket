@@ -40,6 +40,12 @@ Este repositorio contine información sobre biasmarket website:
     npm run dev
 ```
 
+También se puede ejecutar con:
+
+```bash
+    npm start
+```
+
 ## Introducción a biasmarket
 
 <div align="center">
