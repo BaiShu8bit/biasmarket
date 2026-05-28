@@ -68,9 +68,12 @@ Dentro de biasmarket, se puede hacer lo siguiente:
 
 ### API
 
-Se ha creado una API con las photocards, álbumes y grupos para que se pueda ver en la website.
+El script AJAX no realiza una petición a un servicio externo de terceros, sino que apunta directamente a un endpoint propio de nuestra aplicación.
 
-Debido a que las imágenes de las photocards no están guardadas localmente, sino ubicadas en la nube, existe la posibilidad de que algunas imágenes no aparezcan.
+Esta API interna, que he diseñado y programado yo mismo en el servidor, es la encargada de procesar la solicitud de AJAX, consultar la base de datos, estructurar la información en formato JSON y devolverla al cliente para que AJAX la inyecte en la página web sin necesidad de recargar el navegador.
+
+> [!NOTE]
+> Debido a que las imágenes de las photocards no están guardadas localmente, sino ubicadas en la nube, existe la posibilidad de que algunas imágenes no sean visibles.
 
 ### ❗Importante
 
@@ -98,7 +101,7 @@ Se recomienda buscar por nombre de idol o grupo. Si se desea ambas, se debe escr
 
 ### Secciones
 
-* **Las más vendidas:** Aparecerán las *photocards* más vendidas.
+* **Las más destcadas:** Aparecerán las *photocards* más destacadas.
 > [!NOTE]
 > Al ser una website nueva, se ha utilizado un random para la visualización de photocards.
 
