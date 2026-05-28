@@ -73,7 +73,7 @@ Si se desea acceder como usuario (admin), se debe utilizar las siguientes creden
 
 Este usuario tiene permisos de administrador, por lo que puede realizar todas las acciones de un usuario normal, además de:
 
-- Gestionar usuarios (crear, editar, eliminar).
+- Gestionar usuarios.
 
 ### Funcionalidades
 
