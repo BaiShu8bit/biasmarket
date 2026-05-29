@@ -8,8 +8,12 @@
 
 Este repositorio contine información sobre biasmarket website:
 
-- API desarrollada con [Next.js](https://nodejs.org/es)
+- API desarrollada con [Node](https://nodejs.org/es)
 - Utilización de [Bootstrap](https://getbootstrap.com/) como framework CSS
+
+## Instalación previa
+
+Para que el proyecto funcione correctamente, es necesario tener instalado Node.js, puedes descargarlo desde [aquí](https://nodejs.org/es/download).
 
 ## Modo Local
 
