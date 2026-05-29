@@ -122,7 +122,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <form class="payment-form" name="payment-form" onsubmit="return false;">
+                <form class="payment-form" name="payment-form" id="payment-form">
                     <label for="input-card-number">Número de Tarjeta</label>
                     <input type="text" id="input_card_number" name="input_card_number" maxlength="19" placeholder="1234 5678 9123 4567"  required>
                     <p id="mensaje_input_card_number" style="color:red;"></p>

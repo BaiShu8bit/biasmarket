@@ -142,6 +142,36 @@ foreach ($carrito as $item) {
 }
 
 // ==========================
+// RESTAR / ELIMINAR PUBLICACIÓN
+// ==========================
+
+$sqlStock = "
+    UPDATE publicaciones
+    SET cantidadCarta = cantidadCarta - :cantidad
+    WHERE publicacionId = :publicacionId
+";
+
+$stmtStock = $db->prepare($sqlStock);
+
+$stmtStock->execute([
+    ':cantidad' => $item['cantidad'],
+    ':publicacionId' => $item['publicacionId']
+]);
+
+// SI LLEGA A 0, BORRARLA
+$sqlDelete = "
+    DELETE FROM publicaciones
+    WHERE publicacionId = :publicacionId
+    AND cantidadCarta <= 0
+";
+
+$stmtDelete = $db->prepare($sqlDelete);
+
+$stmtDelete->execute([
+    ':publicacionId' => $item['publicacionId']
+]);
+
+// ==========================
 // SUCCESS
 // ==========================
 

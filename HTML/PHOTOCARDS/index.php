@@ -90,9 +90,6 @@ $logueado = isset($_SESSION["clienteId"]);
                                 <p><strong>Miembro:</strong> <span id="miembro_carta"></span></p>
                                 <p><strong>Álbum:</strong> <a id="link_album" href="#"><span id="album_carta"></span></a></p>
                                 <hr>
-
-                                <h5 class="card-title">Tendencia de precio</h5>
-                                <p class="card-text" id="tendencia_precio"></p>
                                 <br>
                             </div>
                         </div>
@@ -149,9 +146,6 @@ $logueado = isset($_SESSION["clienteId"]);
                                 <p><strong>Miembro:</strong> <span id="miembro_carta"></span></p>
                                 <p><strong>Álbum:</strong> <a id="link_album" href="#"><span id="album_carta"></span></a></p>
                                 <hr>
-
-                                <h5 class="card-title">Tendencia de precio</h5>
-                                <p class="card-text" id="tendencia_precio"></p>
                                 <br>
                             </div>
                         </div>

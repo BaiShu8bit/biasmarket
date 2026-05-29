@@ -308,30 +308,144 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// ======================================
-// PAGAR AHORA
-// ======================================
+// ======================
+// FORMULARIO PAGO
+// ======================
 
 document
-    .getElementById("pagar_ahora")
+    .getElementById("payment-form")
+    .addEventListener("submit", validarFormulario);
 
-    .addEventListener("click", async () => {
+async function validarFormulario(e) {
 
-        const carrito =
-            JSON.parse(
-                localStorage.getItem("carrito")
-            ) || [];
+    e.preventDefault();
 
-        if (carrito.length === 0) {
+    let valido = true;
 
-            alert("Carrito vacío");
+    // ======================
+    // INPUTS
+    // ======================
 
-            return;
-        }
+    let cardNumber =
+        document.getElementById("input_card_number");
 
-        try {
+    let cardHolder =
+        document.getElementById("input_card_holder");
 
-            const response = await fetch(
+    let cardExpiry =
+        document.getElementById("input_card_expiry");
+
+    let cvv =
+        document.getElementById("input_cvv");
+
+    // ======================
+    // MENSAJES
+    // ======================
+
+    let mensajeCardNumber =
+        document.getElementById("mensaje_input_card_number");
+
+    let mensajeCardHolder =
+        document.getElementById("mensaje_input_card_holder");
+
+    let mensajeCardExpiry =
+        document.getElementById("mensaje_input_card_expiry");
+
+    let mensajeCvv =
+        document.getElementById("mensaje_input_cvv");
+
+    // ======================
+    // LIMPIAR MENSAJES
+    // ======================
+
+    mensajeCardNumber.textContent = "";
+    mensajeCardHolder.textContent = "";
+    mensajeCardExpiry.textContent = "";
+    mensajeCvv.textContent = "";
+
+    // ======================
+    // NUMERO TARJETA
+    // ======================
+
+    let numeroSinEspacios =
+        cardNumber.value.replace(/\s/g, "");
+
+    if (!/^\d{16}$/.test(numeroSinEspacios)) {
+
+        mensajeCardNumber.textContent =
+            "La tarjeta debe tener 16 números";
+
+        valido = false;
+    }
+
+    // ======================
+    // TITULAR
+    // ======================
+
+    if (cardHolder.value.trim().length < 3) {
+
+        mensajeCardHolder.textContent =
+            "Introduce un nombre válido";
+
+        valido = false;
+    }
+
+    // ======================
+    // FECHA
+    // ======================
+
+    if (
+        !/^(0[1-9]|1[0-2])\/\d{2}$/
+            .test(cardExpiry.value)
+    ) {
+
+        mensajeCardExpiry.textContent =
+            "Formato inválido (MM/AA)";
+
+        valido = false;
+    }
+
+    // ======================
+    // CVV
+    // ======================
+
+    if (!/^\d{3}$/.test(cvv.value)) {
+
+        mensajeCvv.textContent =
+            "El CVV debe tener 3 números";
+
+        valido = false;
+    }
+
+    // ======================
+    // SI HAY ERRORES
+    // ======================
+
+    if (!valido) {
+
+        return;
+    }
+
+    // ======================
+    // PAGAR
+    // ======================
+
+    const carrito =
+        JSON.parse(
+            localStorage.getItem("carrito")
+        ) || [];
+
+    if (carrito.length === 0) {
+
+        alert("Carrito vacío");
+
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(
                 "../COMPRAR/procesar_compra.php",
                 {
                     method: "POST",
@@ -347,33 +461,31 @@ document
                 }
             );
 
-            const data =
-                await response.json();
+        const data =
+            await response.json();
 
-            // ==========================
-            // SUCCESS
-            // ==========================
+        if (data.success) {
 
-            if (data.success) {
+            alert("Compra realizada");
 
-                alert("Compra realizada");
+            localStorage.removeItem(
+                "carrito"
+            );
 
-                localStorage.removeItem(
-                    "carrito"
-                );
+            window.location.href =
+                "../INDEX/index.php";
 
-                window.location.href =
-                    "../INDEX/index.php";
+        } else {
 
-            } else {
-
-                alert(data.message);
-            }
-
-        } catch (error) {
-
-            console.error(error);
-
-            alert("Error realizando compra");
+            alert(data.message);
         }
-    });
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Error realizando compra"
+        );
+    }
+}

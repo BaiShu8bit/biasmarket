@@ -56,6 +56,17 @@ También se puede ejecutar en modo producción con:
 ```bash
     npm start
 ```
+9. El index.php se encuentra en la carpeta:
+
+```bash
+    /biasmarket/HTML/INDEX/index.php
+```
+Pero se puede acceder desde:
+
+```bash
+    /biasmarket/
+```
+Y rediccionará al index.php.
 
 ## Introducción a biasmarket
 
