@@ -13,11 +13,11 @@ Este repositorio contine información sobre biasmarket website:
 
 ## Instalación previa
 
-Para que el proyecto funcione correctamente, es necesario tener instalado Node.js, puedes descargarlo desde [aquí](https://nodejs.org/es/download).
+Para que el proyecto funcione correctamente en modo local, es necesario tener instalado Node.js, puedes descargarlo desde [aquí](https://nodejs.org/es/download).
 
 ## Modo Local
 
-Para que el proyecto funcione correctamente en modo local, es necesario seguir los siguientes pasos:
+Una vez instalado Node.js, es necesario seguir los siguientes pasos:
 
 1. Clonar el repositorio.
 
